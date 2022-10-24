@@ -18,6 +18,7 @@ class BasePage(object):
             path = Template(filepath)
         except Exception as e:
             logger.warn(f'{filepath}图片无法点击')
+            raise e
         else:
             logger.info(f'{path}图片存在')
             return path
@@ -28,6 +29,7 @@ class BasePage(object):
             logger.info(f'开始点击图片：{filepath}')
         except Exception as e:
             logger.warn(f'{filepath}图片无法点击')
+            raise e
 
     def text(self, msg=None):
         try:
@@ -35,6 +37,7 @@ class BasePage(object):
             logger.info(f'输入text值为: {msg}')
         except Exception as e:
             logger.warn(f'{msg}值非法')
+            raise e
 
     def swipe(self):
         pass
@@ -45,6 +48,7 @@ class BasePage(object):
             logger.info(f'断言成功，断言的图片为：{filepath}')
         except Exception as e:
             logger.error('断言失败')
+            raise e
 
     def double_click(self, filepath):
         try:
@@ -52,3 +56,4 @@ class BasePage(object):
             logger.info(f'双击清除图片为：{filepath}')
         except Exception as e:
             logger.error('无法清除')
+            raise e

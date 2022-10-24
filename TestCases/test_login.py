@@ -22,13 +22,13 @@ class TestLogin(object):
         login_picture_path = os.path.join(p_path.picture_path, 'login')
         # 账号输入框
         basepage.touch(os.path.join(login_picture_path, '输入用户名.png'))
-        # 情况
+        # 有就清空，没有就直接输入
         if exists(Template(os.path.join(login_picture_path, '清空用户名.png'))):
             basepage.double_click(os.path.join(login_picture_path, '清空用户名.png'))
         basepage.text(username)
         # 密码输入框
         basepage.touch(os.path.join(login_picture_path, '输入密码.png'))
-        # 双击勾选
+        #  有就清空，没有就直接输入
         if exists(Template(os.path.join(login_picture_path, '清空密码.png'))):
             basepage.double_click(os.path.join(login_picture_path, '清空密码.png'))
         basepage.text(password)
