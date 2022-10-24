@@ -1,0 +1,28 @@
+2022-10-24 17:39:02,004 rj_jxy INFO conftest.py [第21行] **********开始连接/启动设备**********
+2022-10-24 17:39:02,398 rj_jxy INFO conftest.py [第28行] **********连接/启动设备正常**********
+2022-10-24 17:39:02,399 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\输入用户名.png
+2022-10-24 17:39:02,399 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\输入用户名.png)图片存在
+2022-10-24 17:39:05,346 rj_jxy INFO basepage.py [第29行] 开始点击图片：E:\Git\rjjxy\Picture\login\输入用户名.png
+2022-10-24 17:39:05,477 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\清空用户名.png
+2022-10-24 17:39:05,477 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\清空用户名.png)图片存在
+2022-10-24 17:39:06,014 rj_jxy INFO basepage.py [第56行] 双击清除图片为：E:\Git\rjjxy\Picture\login\清空用户名.png
+2022-10-24 17:39:06,796 rj_jxy INFO basepage.py [第37行] 输入text值为: 18377560722
+2022-10-24 17:39:06,796 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\输入密码.png
+2022-10-24 17:39:06,796 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\输入密码.png)图片存在
+2022-10-24 17:39:07,928 rj_jxy INFO basepage.py [第29行] 开始点击图片：E:\Git\rjjxy\Picture\login\输入密码.png
+2022-10-24 17:39:08,065 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\清空密码.png
+2022-10-24 17:39:08,066 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\清空密码.png)图片存在
+2022-10-24 17:39:08,459 rj_jxy INFO basepage.py [第56行] 双击清除图片为：E:\Git\rjjxy\Picture\login\清空密码.png
+2022-10-24 17:39:09,061 rj_jxy INFO basepage.py [第37行] 输入text值为: Test@321
+2022-10-24 17:39:21,793 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\登录.png
+2022-10-24 17:39:21,793 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\登录.png)图片存在
+2022-10-24 17:39:22,948 rj_jxy INFO basepage.py [第29行] 开始点击图片：E:\Git\rjjxy\Picture\login\登录.png
+2022-10-24 17:39:22,948 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\首页logo.png
+2022-10-24 17:39:22,948 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\首页logo.png)图片存在
+2022-10-24 17:39:24,915 rj_jxy INFO basepage.py [第48行] 断言成功，断言的图片为：E:\Git\rjjxy\Picture\login\首页logo.png
+2022-10-24 17:39:24,916 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\关闭窗口.png
+2022-10-24 17:39:24,916 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\关闭窗口.png)图片存在
+2022-10-24 17:39:25,929 rj_jxy INFO basepage.py [第29行] 开始点击图片：E:\Git\rjjxy\Picture\login\关闭窗口.png
+2022-10-24 17:39:25,929 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\确定关闭.png
+2022-10-24 17:39:25,929 rj_jxy INFO basepage.py [第23行] Template(E:\Git\rjjxy\Picture\login\确定关闭.png)图片存在
+2022-10-24 17:39:26,663 rj_jxy INFO basepage.py [第29行] 开始点击图片：E:\Git\rjjxy\Picture\login\确定关闭.png
