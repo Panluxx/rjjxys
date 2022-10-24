@@ -15,5 +15,11 @@ class ProjectPath:
     # 图片
     picture_path = os.path.join(root_path, 'Picture')
 
+    # log
+    log_path = os.path.join(root_path, 'logs')
+
+    # 资源
+    resources_path = os.path.join(root_path, 'Resources')
+
 
 p_path = ProjectPath()
