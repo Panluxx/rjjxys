@@ -46,5 +46,3 @@ class TestLogin(object):
         basepage.assert_exists(os.path.join(login_picture_path, '首页logo.png'), "登录成功后_存在logo")
         basepage.touch(os.path.join(login_picture_path, '关闭窗口.png'))
         basepage.touch(os.path.join(login_picture_path, '确定关闭.png'))
-
-#testtest
