@@ -36,7 +36,7 @@ def open_client():
 @pytest.fixture(scope='module')
 def login(open_client):
     # 图片地址
-    module_picture_path = os.path.join(p_path.picture_path, 'module')
+    module_picture_path = os.path.join(p_path.picture_path, 'login')
     sleep(2)
-    touch(Template(os.path.join(module_picture_path, 'tpl1666165422051.png'), record_pos=(-0.259, 0.092),
+    touch(Template(os.path.join(module_picture_path, '登录.png'), record_pos=(-0.259, 0.092),
                    resolution=(1920, 1080)))

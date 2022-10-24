@@ -39,7 +39,7 @@ class BasePage(object):
             logger.warn(f'{msg}值非法')
             raise e
 
-    def swipe(self):
+    def swipe(self, filepath):
         pass
 
     def assert_exists(self, filepath, msg=''):

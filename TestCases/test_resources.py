@@ -12,6 +12,8 @@ import os
 import pytest
 from Common.basepage import BasePage
 from time import sleep
+from pywinauto.keyboard import SendKeys
+from Setting.constant import *
 
 
 @pytest.mark.usefixtures('login')
@@ -24,10 +26,19 @@ class TestResources(object):
         sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '导入.png'))
         sleep(2)
+        basepage.touch(os.path.join(resources_picture_path, '下拉框.png'))
+        sleep(2)
+        basepage.touch(os.path.join(resources_picture_path, '路径.png'))
+        sleep(2)
+        # 文件路径
+        basepage.text(p_path.resources_path)
+        sleep(2)
+        SendKeys('{ENTER}')
+        sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '输入文件名.png'))
         sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '输入文件名.png'))
-        basepage.text('音频.mp3')
+        basepage.text(mp3_name)
         sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '打开.png'))
         sleep(3)
