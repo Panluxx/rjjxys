@@ -45,7 +45,7 @@ class BasePage(object):
     def assert_exists(self, filepath, msg=''):
         try:
             assert_exists(self.template(filepath), msg=msg)
-            logger.info(f'断言成功，断言的图片为：{filepath}')
+            logger.info(f'断言成功：msg值为：{msg}')
         except Exception as e:
             logger.error('断言失败')
             raise e
