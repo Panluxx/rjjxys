@@ -7,6 +7,7 @@
 
 
 from airtest.core.api import *
+from airtest.core.device import *
 from pywinauto.application import Application
 import pytest
 from Common.logger import logger
@@ -29,8 +30,10 @@ def open_client():
     except Exception as e:
         logger.warn('*' * 10 + '连接/启动设备异常' + '*' * 10)
         raise e
-    # yield
-    # Application().kill()
+    yield
+    sleep(5)
+    APP.kill()
+    logger.info('*' * 10 + '测试结束/关闭客户端' + '*' * 10)
 
 
 @pytest.fixture(scope='module')

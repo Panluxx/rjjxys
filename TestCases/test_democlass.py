@@ -69,8 +69,3 @@ class TestDemoClass(object):
         # 确定关闭
         basepage.touch(os.path.join(module_picture_path, '确定关闭.png'))
         sleep(5)
-        # 程序窗口关闭
-        basepage.touch(os.path.join(module_picture_path, '书本窗口关闭.png'))
-        sleep(5)
-        # 确定关闭
-        basepage.touch(os.path.join(module_picture_path, '确定关闭.png'))
