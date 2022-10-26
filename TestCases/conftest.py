@@ -25,7 +25,7 @@ def open_client():
         __author__ = "Administrator"
         auto_setup(__file__, devices=["Windows:///"])
         # 启动设备
-        APP = Application().start(client_dir)
+        APP = Application().start(client_dir())
         logger.info('*' * 10 + '连接/启动设备正常' + '*' * 10)
     except Exception as e:
         logger.warn('*' * 10 + '连接/启动设备异常' + '*' * 10)
