@@ -6,6 +6,7 @@
 # Software  : PyCharm
 import winreg
 
+
 # 通过注册表查询安装文件路径
 def client_dir():
     reg = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,
@@ -18,10 +19,9 @@ def client_dir():
 username = '18377560722'
 password = 'Test@321'
 
-mp3_name = '音频.mp3'
-mp4_name = '视频.mp4'
-jpg_name = '图片.jpg'
-swf_name = '动画.swf'
-xls_name = '文件.xlsx'
-doc_name = '文档.docx'
-ppt_name = '课件.pptx'
+# 资源
+resource_name = [{"name": "音频.mp3"}, {"name": "视频.mp4"}, {"name": "图片.jpg"}, {"name": "动画.swf"},
+                 {"name": "文件.xlsx"}, {"name": "文档.docx"}, {"name": "课件.pptx"}]
+
+# 激活码
+book_code = 'A12345678'

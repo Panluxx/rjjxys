@@ -13,7 +13,7 @@ import pytest
 from Common.basepage import BasePage
 from time import sleep
 from pywinauto.keyboard import SendKeys
-from Setting.constant import resource_name
+from Setting.constant import resource_name, book_code
 
 basepage = BasePage()
 # 图片地址
@@ -98,6 +98,6 @@ class TestResources(object):
         basepage.touch(os.path.join(resources_picture_path, '添加课本.png'))
         sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '输入激活码.png'))
-        basepage.text('A12345678')
+        basepage.text(book_code)
         sleep(2)
         basepage.touch(os.path.join(resources_picture_path, '激活.png'))
