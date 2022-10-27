@@ -10,12 +10,10 @@ from airtest.core.api import *
 from pywinauto.application import Application
 import pytest
 from Common.logger import logger
-from Common.config import p_path
-import os
 from time import sleep
 from Setting.constant import client_dir
-from Common.basepage import BasePage
 from Setting.constant import username, password
+from TestPages.login import Login
 
 
 @pytest.fixture(scope='module')
@@ -39,36 +37,17 @@ def open_client():
 
 @pytest.fixture(scope='module')
 def login(open_client):
-    # 图片地址
-    basepage = BasePage()
-    module_picture_path = os.path.join(p_path.picture_path, 'login')
+    login = Login()
     sleep(2)
-    if basepage.exists(os.path.join(module_picture_path, '勾选.png')):
-        # 图片地址
-        login_picture_path = os.path.join(p_path.picture_path, 'login')
-        # 输入用户名
-        if basepage.exists(os.path.join(login_picture_path, '账号.png')):
-            name = basepage.exists(os.path.join(login_picture_path, '账号.png'))
-            name = (name[0] + 80, name[1])
-            double_click(name)
-        else:
-            basepage.touch(os.path.join(login_picture_path, '输入用户名.png'))
-        sleep(2)
-        basepage.text(username)
-        # 有就清空，没有就直接输入
-        if basepage.exists(os.path.join(login_picture_path, '清空密码.png')):
-            basepage.double_click(os.path.join(login_picture_path, '清空密码.png'))
-        else:
-
-            # 密码输入框
-            basepage.touch(os.path.join(login_picture_path, '输入密码.png'))
-        sleep(2)
-        basepage.text(password)
-        # 记住密码
-        if basepage.exists(os.path.join(login_picture_path, '勾选.png')):
-            basepage.touch(os.path.join(login_picture_path, '勾选.png'))
-        sleep(2)
-        # 勾选协议
-        if basepage.exists(os.path.join(login_picture_path, '勾选.png')):
-            basepage.touch(os.path.join(login_picture_path, '勾选.png'))
-    basepage.touch(os.path.join(module_picture_path, '登录.png'))
+    if login.remember_password():
+        login.username()
+        login.click_username()
+        login.input_username(username)
+        login.clear_password()
+        login.click_password()
+        login.input_password(password)
+        login.remember_password()
+        login.click_agreement()
+        login.click_login()
+        login.logo()
+    login.click_login()

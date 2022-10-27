@@ -10,7 +10,7 @@ from airtest.core.api import *
 from Common.logger import logger
 
 
-class BasePage(object):
+class BasePage:
 
     def template(self, filepath, record_pos=None, resolution=(1920, 1080)):
         try:
