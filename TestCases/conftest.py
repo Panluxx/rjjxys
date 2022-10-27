@@ -10,10 +10,11 @@ from airtest.core.api import *
 from pywinauto.application import Application
 import pytest
 from Common.logger import logger
-from time import sleep
 from Setting.constant import client_dir
 from Setting.constant import username, password
-from TestPages.login import Login
+from Common.basepage import BasePage
+import os
+from Common.config import p_path
 
 
 @pytest.fixture(scope='module')
@@ -35,19 +36,38 @@ def open_client():
     logger.info('*' * 10 + '测试结束/关闭客户端' + '*' * 10)
 
 
+def get_path(image):
+    login_path = os.path.join(p_path.picture_path, 'login')
+    return os.path.join(login_path, image)
+
+
 @pytest.fixture(scope='module')
 def login(open_client):
-    login = Login()
-    sleep(2)
-    if login.remember_password():
-        login.username()
-        login.click_username()
-        login.input_username(username)
-        login.clear_password()
-        login.click_password()
-        login.input_password(password)
-        login.remember_password()
-        login.click_agreement()
-        login.click_login()
-        login.logo()
-    login.click_login()
+    basepage = BasePage()
+    if basepage.exists(get_path('未勾选.png')):
+        name = basepage.exists(get_path('账号.png'))
+        if name:
+            name = (name[0] + 80, name[1])
+            double_click(name)
+        else:
+            basepage.touch(get_path('输入用户名.png'))
+        sleep(2)
+        basepage.text(username)
+        # 有就清空，没有就直接输入
+        if basepage.exists(get_path('清空密码.png')):
+            basepage.double_click(get_path('清空密码.png'))
+        else:
+            # 密码输入框
+            basepage.touch(get_path('输入密码.png'))
+        sleep(2)
+        basepage.text(password)
+        # 记住密码
+        if basepage.exists(get_path('未勾选.png')):
+            basepage.touch(get_path('未勾选.png'))
+        sleep(2)
+        # 勾选协议
+        if basepage.exists(get_path('未勾选.png')):
+            basepage.touch(get_path('未勾选.png'))
+        sleep(2)
+    # 登录
+    basepage.touch(get_path('登录.png'))

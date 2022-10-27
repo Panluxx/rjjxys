@@ -1,0 +1,152 @@
+2022-10-27 13:46:58,516 rj_jxy INFO conftest.py [第21行] **********开始连接/启动设备**********
+2022-10-27 13:46:58,951 rj_jxy INFO conftest.py [第28行] **********连接/启动设备正常**********
+2022-10-27 13:47:00,962 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\未勾选.png
+2022-10-27 13:47:04,381 rj_jxy INFO basepage.py [第28行] E:\Git\rjjxy\Picture\login\未勾选.png图片存在
+2022-10-27 13:47:04,381 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\login\登录.png
+2022-10-27 13:47:05,447 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\login\登录.png
+2022-10-27 13:47:05,451 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:47:09,773 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:47:11,785 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:47:12,896 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:47:14,897 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:47:16,074 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:47:18,076 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:47:19,244 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:47:22,741 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:47:26,828 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:28,017 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:30,030 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:31,205 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:31,692 rj_jxy INFO basepage.py [第46行] 输入text值为: 音频.mp3
+2022-10-27 13:47:33,703 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:47:34,857 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:47:37,866 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\音频.png
+2022-10-27 13:47:37,942 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:47:37,951 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:47:39,045 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:47:41,048 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:47:42,139 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:47:44,149 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:47:45,310 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:47:47,320 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:47:48,493 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:47:51,994 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:47:56,077 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:57,251 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:47:59,257 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:00,441 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:00,930 rj_jxy INFO basepage.py [第46行] 输入text值为: 视频.mp4
+2022-10-27 13:48:02,938 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:48:04,097 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:48:07,100 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\视频.png
+2022-10-27 13:48:07,196 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:48:07,204 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:48:08,284 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:48:10,297 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:48:11,398 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:48:13,408 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:48:14,573 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:48:16,588 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:48:17,762 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:48:21,257 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:48:25,331 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:26,502 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:28,515 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:29,682 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:30,168 rj_jxy INFO basepage.py [第46行] 输入text值为: 图片.jpg
+2022-10-27 13:48:32,181 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:48:33,337 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:48:36,346 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\图片.png
+2022-10-27 13:48:36,432 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:48:36,437 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:48:37,521 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:48:39,535 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:48:40,634 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:48:42,645 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:48:43,821 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:48:45,822 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:48:47,008 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:48:50,509 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:48:54,589 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:55,782 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:57,782 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:58,956 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:48:59,445 rj_jxy INFO basepage.py [第46行] 输入text值为: 动画.swf
+2022-10-27 13:49:01,450 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:49:02,613 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:49:05,614 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\动画.png
+2022-10-27 13:49:05,714 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:49:05,722 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:49:06,825 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:49:08,826 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:49:09,921 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:49:11,930 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:49:13,102 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:49:15,114 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:49:16,283 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:49:19,788 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:49:23,874 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:25,058 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:27,073 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:28,259 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:28,804 rj_jxy INFO basepage.py [第46行] 输入text值为: 文件.xlsx
+2022-10-27 13:49:30,807 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:49:31,982 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:49:34,997 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\文件.png
+2022-10-27 13:49:35,091 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:49:35,096 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:49:36,180 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:49:38,181 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:49:39,274 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:49:41,287 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:49:42,460 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:49:44,470 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:49:45,633 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:49:49,121 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:49:53,192 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:54,374 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:56,389 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:57,579 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:49:58,126 rj_jxy INFO basepage.py [第46行] 输入text值为: 文档.docx
+2022-10-27 13:50:00,129 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:50:01,307 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:50:04,312 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\文档.png
+2022-10-27 13:50:04,438 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:50:04,444 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:05,533 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:07,548 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:50:08,635 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导入.png
+2022-10-27 13:50:10,639 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:50:11,814 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\下拉框.png
+2022-10-27 13:50:13,818 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:50:14,993 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\路径.png
+2022-10-27 13:50:18,487 rj_jxy INFO basepage.py [第46行] 输入text值为: E:\Git\rjjxy\Resources
+2022-10-27 13:50:22,574 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:50:23,749 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:50:25,756 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:50:26,947 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\输入文件名.png
+2022-10-27 13:50:27,494 rj_jxy INFO basepage.py [第46行] 输入text值为: 课件.pptx
+2022-10-27 13:50:29,502 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:50:30,675 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\打开.png
+2022-10-27 13:50:33,680 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\课件.png
+2022-10-27 13:50:33,780 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比资源封面
+2022-10-27 13:50:33,786 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:34,877 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:36,877 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导出.png
+2022-10-27 13:50:37,974 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\导出.png
+2022-10-27 13:50:39,987 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\更改目录.png
+2022-10-27 13:50:41,119 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\更改目录.png
+2022-10-27 13:50:43,124 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\保存.png
+2022-10-27 13:50:44,219 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\保存.png
+2022-10-27 13:50:46,229 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\勾选资源.png
+2022-10-27 13:50:47,409 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\勾选资源.png
+2022-10-27 13:50:49,411 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\确定.png
+2022-10-27 13:50:50,519 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\确定.png
+2022-10-27 13:50:52,522 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\导出提示.png
+2022-10-27 13:50:52,638 rj_jxy INFO basepage.py [第57行] 断言成功：msg值为：对比导出提示
+2022-10-27 13:50:52,643 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:53,845 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\我的资源.png
+2022-10-27 13:50:55,845 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\新建文件夹.png
+2022-10-27 13:50:56,967 rj_jxy INFO basepage.py [第38行] 开始点击图片：E:\Git\rjjxy\Picture\resources\新建文件夹.png
+2022-10-27 13:50:57,335 rj_jxy INFO basepage.py [第46行] 输入text值为: test
+2022-10-27 13:50:59,402 rj_jxy INFO basepage.py [第17行] 开始寻找图片：E:\Git\rjjxy\Picture\resources\文件夹名称.png
