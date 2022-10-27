@@ -27,12 +27,14 @@ class TestResources(BasePage):
     def test_import_resources(self, login, test_data):
         self.touch(get_path('我的资源.png'))
         self.touch(get_path('导入.png'))
-        self.touch(get_path('下拉框.png'))
-        self.touch(get_path('路径.png'))
-        # 文件路径
-        self.text(p_path.resources_path)
-        SendKeys('{ENTER}')
-        self.touch(get_path('输入文件名.png'))
+        if self.exists(get_path('路径存在.png')):
+            pass
+        else:
+            self.touch(get_path('下拉框.png'))
+            self.touch(get_path('路径.png'))
+            # 文件路径
+            self.text(p_path.resources_path)
+            SendKeys('{ENTER}')
         self.touch(get_path('输入文件名.png'))
         self.text(test_data['name'])
         self.touch(get_path('打开.png'))
