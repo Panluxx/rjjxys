@@ -14,24 +14,22 @@ import pytest
 from TestPages.login import Login
 from Setting.constant import username, password
 
-login = Login()
-
 
 @pytest.mark.usefixtures('open_client')
-class TestLogin(object):
+class TestLogin(Login):
     def test_login(self, open_client):
-        login.username()
-        login.click_username()
-        login.input_username(username)
-        login.clear_password()
-        login.click_password()
-        login.input_password(password)
-        login.remember_password()
-        login.click_agreement()
-        login.click_login()
-        login.logo()
-        login.close()
-        login.ensure()
+        self.username()
+        self.click_username()
+        self.input_username(username)
+        self.clear_password()
+        self.click_password()
+        self.input_password(password)
+        self.remember_password()
+        self.click_agreement()
+        self.click_login()
+        self.logo()
+        self.close()
+        self.ensure()
 
         # basepage = BasePage()
         # # 图片地址
