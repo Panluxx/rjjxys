@@ -21,6 +21,7 @@ def get_path(image):
 
 @pytest.mark.usefixtures('open_client')
 class TestLogin(BasePage):
+    @pytest.mark.login
     def test_login(self, open_client):
         name = self.exists(get_path('账号.png'))
         if name:

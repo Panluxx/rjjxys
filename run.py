@@ -23,7 +23,7 @@ if __name__ == '__main__':
     """["-s", "-v", "--reruns", "1", "--reruns-delay", "5", "--html=Outputs/reports/pytest_reports.html",
                       "--alluredir=Outputs/allure/history"]
     """
-    pytest.main()
+    pytest.main(["-m", "login"])
 
     simple_report(__file__, logpath=log_root, output=report_path)
     # simple_report(__file__, logpath=True)
