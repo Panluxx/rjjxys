@@ -28,45 +28,32 @@ class TestDemoClass(BasePage):
         sleep(10)
         # 点击模块
         self.touch(get_path('教学课例.png'))
-        sleep(5)
         # 暂停
         self.touch(get_path('暂停.png'))
-        sleep(5)
         # 播放
         self.touch(get_path('播放.png'))
-        sleep(5)
         # 关闭声音
         self.touch(get_path('关闭声音.png'))
-        sleep(5)
         # 开启声音
         self.touch(get_path('播放声音.png'))
-        sleep(5)
         # 下载
         self.touch(get_path('下载.png'))
         # 确定下载
         self.touch(get_path('确定.png'))
-        sleep(5)
         # 拖动进度条
         swipe(Template(get_path('拖动.png'), record_pos=(-0.345, 0.141),
                        resolution=(1920, 1080)), vector=[0.3266, 0.0009])
-        sleep(5)
         # 窗口放大
         self.touch(get_path('窗口放大.png'))
-        sleep(5)
         # 窗口缩小
         self.touch(get_path('窗口缩小.png'))
-        sleep(5)
         # 窗口常规（小）
         self.touch(get_path('窗口常规（小）.png'))
-        sleep(5)
         # 窗口常规（大）
         self.touch(get_path('窗口常规（大）.png'))
-        sleep(5)
         # 模块窗口关闭
         self.touch(get_path('模块窗口关闭.png'))
-        sleep(5)
         # 书本窗口关闭
         self.touch(get_path('书本窗口关闭.png'))
-        sleep(5)
         # 确定关闭
         self.touch(get_path('确定关闭.png'))
