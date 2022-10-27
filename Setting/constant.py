@@ -15,6 +15,9 @@ def client_dir():
     return path[0] + "\\main\\EnTeach.exe"
 
 
+# 文件存放路径
+resources_save_dir = r'C:\Users\Administrator\Downloads'
+
 # 账号/密码
 username = '18377560722'
 password = 'Test@321'

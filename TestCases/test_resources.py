@@ -13,7 +13,7 @@ import pytest
 from Common.basepage import BasePage
 from time import sleep
 from pywinauto.keyboard import SendKeys
-from Setting.constant import resource_name, book_code
+from Setting.constant import resource_name, book_code, resources_save_dir
 
 
 def get_path(image):
@@ -67,6 +67,15 @@ class TestResources(BasePage):
         sleep(2)
         self.touch(get_path('更改目录.png'))
         sleep(2)
+        self.touch(get_path('下拉框.png'))
+        sleep(2)
+        self.touch(get_path('路径.png'))
+        sleep(2)
+        # 存放位置
+        self.text(resources_save_dir)
+        sleep(2)
+        SendKeys('{ENTER}')
+        sleep(2)
         self.touch(get_path('保存.png'))
         sleep(2)
         self.touch(get_path('勾选资源.png'))
@@ -76,6 +85,8 @@ class TestResources(BasePage):
         self.assert_exists(get_path('导出提示.png'), msg='对比导出提示')
 
     def test_create_folder(self, login):
+        if self.exists(get_path('导出提示.png')):
+            sleep(60)
         self.touch(get_path('我的资源.png'))
         sleep(2)
         self.touch(get_path('新建文件夹.png'))
