@@ -6,6 +6,13 @@
 # Software  : PyCharm
 
 import pytest
+import os
+from airtest.report.report import simple_report
+
+root_path = os.path.split(os.path.realpath(__file__))[0]
+log_root = root_path + "\\logs"
+report_path = root_path + "\\report"
+
 
 if __name__ == '__main__':
     # 冒烟测试命令
@@ -17,3 +24,6 @@ if __name__ == '__main__':
                       "--alluredir=Outputs/allure/history"]
     """
     pytest.main()
+
+    simple_report(__file__, logpath=log_root, output=report_path)
+    # simple_report(__file__, logpath=True)
