@@ -10,11 +10,12 @@ from airtest.core.api import *
 from pywinauto.application import Application
 import pytest
 from Common.logger import logger
-from Setting.constant import client_dir
+from Setting.constant import client_dir, dir
 from Setting.constant import username, password
 from Common.basepage import BasePage
-import os
+import os, webbrowser
 from Common.config import p_path
+from pywinauto.keyboard import SendKeys
 
 
 @pytest.fixture(scope='module')
@@ -31,7 +32,13 @@ def open_client():
         logger.warn('*' * 10 + '连接/启动设备异常' + '*' * 10)
         raise e
     yield
-    sleep(5)
+    sleep(2)
+    webbrowser.open(os.path.realpath(dir()))
+    if BasePage().exists(get_path('存放资源的文件.png')):
+        BasePage().touch(get_path('存放资源的文件.png'))
+        SendKeys('{DELETE}')
+    BasePage().touch(get_path('清除后关闭.png'))
+    sleep(2)
     APP.kill()
     logger.info('*' * 10 + '测试结束/关闭客户端' + '*' * 10)
 

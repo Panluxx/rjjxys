@@ -14,10 +14,10 @@ class BasePage:
 
     def template(self, filepath, record_pos=None, resolution=(1920, 1080)):
         try:
-            logger.info(f'开始寻找图片：{filepath}')
+            logger.info(f'开始寻找元素：{filepath}')
             path = Template(filepath, record_pos=record_pos, resolution=resolution)
         except Exception as e:
-            logger.warn(f'{filepath}图片无法点击')
+            logger.warn(f'{filepath}元素无法点击')
             raise e
         else:
             return path
@@ -25,9 +25,9 @@ class BasePage:
     def exists(self, filepath, record_pos=None, resolution=(1920, 1080)):
         try:
             path = exists(self.template(filepath, record_pos=record_pos, resolution=resolution))
-            logger.info(f'{filepath}图片存在')
+            logger.info(f'{filepath}元素存在')
         except Exception as e:
-            logger.warn(f'{filepath}图片不存在')
+            logger.warn(f'{filepath}元素不存在')
             return False
         else:
             return path
@@ -66,3 +66,4 @@ class BasePage:
         except Exception as e:
             logger.error('无法清除')
             raise e
+

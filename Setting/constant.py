@@ -8,11 +8,16 @@ import winreg
 
 
 # 通过注册表查询安装文件路径
-def client_dir():
+def dir():
     reg = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,
                          r"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\EnTeach")
     path = winreg.QueryValueEx(reg, 'InstallPath')
-    return path[0] + "\\main\\EnTeach.exe"
+    return path[0]
+
+
+def client_dir():
+    path = dir()
+    return path + "\\main\\EnTeach.exe"
 
 
 # 文件存放路径

@@ -10,8 +10,8 @@ import os
 import subprocess
 from Common.config import p_path
 
-xml_report_path = os.path.join(p_path.root_path, 'report', 'xml')
-detail_report_path = os.path.join(p_path.root_path, 'report', 'detail_report')
+xml_report_path = os.path.join(p_path.root_path, 'Report', 'xml')
+detail_report_path = os.path.join(p_path.root_path, 'Report', 'detail_report')
 
 
 def batch(CMD):
