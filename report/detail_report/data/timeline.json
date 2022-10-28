@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "gtx650-ani",
+    "children" : [ {
+      "name" : "15668-MainThread",
+      "children" : [ {
+        "name" : "TestLogin.test_login",
+        "uid" : "78b2a6e03f2dfdb2",
+        "parentUid" : "2c2be4008fd4364e0053a7d8ecf9bb88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666921628530,
+          "stop" : 1666921655379,
+          "duration" : 26849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c2be4008fd4364e0053a7d8ecf9bb88"
+    } ],
+    "uid" : "8be9e56b51bb7baadea36a18342d583e"
+  } ]
+}

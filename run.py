@@ -7,11 +7,17 @@
 
 import pytest
 import os
-from airtest.report.report import simple_report
+import subprocess
+from Common.config import p_path
 
-root_path = os.path.split(os.path.realpath(__file__))[0]
-log_root = root_path + "\\logs"
-report_path = root_path + "\\report"
+xml_report_path = os.path.join(p_path.root_path, 'report', 'xml')
+detail_report_path = os.path.join(p_path.root_path, 'report', 'detail_report')
+
+
+def batch(CMD):
+    output, errors = subprocess.Popen(CMD, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+    outs = output.decode("utf-8")
+    return outs
 
 
 if __name__ == '__main__':
@@ -23,7 +29,11 @@ if __name__ == '__main__':
     """["-s", "-v", "--reruns", "1", "--reruns-delay", "5", "--html=Outputs/reports/pytest_reports.html",
                       "--alluredir=Outputs/allure/history"]
     """
-    pytest.main()
+    # pytest.main(["-vs", "./TestCases/test_login.py"])
 
-    simple_report(__file__, logpath=log_root, output=report_path)
-    # simple_report(__file__, logpath=True)
+    args = ["--alluredir", xml_report_path]
+    test_result = pytest.main(args)
+    cmd = "allure generate {0} -o {1} --clean".format(xml_report_path, detail_report_path)
+    reportResult = batch(cmd)
+
+
