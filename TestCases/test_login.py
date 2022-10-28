@@ -21,6 +21,7 @@ def get_path(image):
 
 @pytest.mark.usefixtures('open_client')
 class TestLogin(BasePage):
+    @pytest.mark.login
     def test_login(self, open_client):
         name = self.exists(get_path('账号.png'))
         if name:
@@ -28,7 +29,6 @@ class TestLogin(BasePage):
             double_click(name)
         else:
             self.touch(get_path('输入用户名.png'))
-        sleep(2)
         self.text(username)
         # 有就清空，没有就直接输入
         if self.exists(get_path('清空密码.png')):
@@ -36,19 +36,15 @@ class TestLogin(BasePage):
         else:
             # 密码输入框
             self.touch(get_path('输入密码.png'))
-        sleep(2)
         self.text(password)
         # 记住密码
         if self.exists(get_path('未勾选.png')):
             self.touch(get_path('未勾选.png'))
-        sleep(2)
         # 勾选协议
         if self.exists(get_path('未勾选.png')):
             self.touch(get_path('未勾选.png'))
-        sleep(2)
         # 登录
         self.touch(get_path('登录.png'))
         self.assert_exists(filepath=get_path('首页logo.png'), msg="登录成功后_存在logo")
         self.touch(get_path('关闭窗口.png'))
-        sleep(1)
         self.touch(get_path('确定关闭.png'), record_pos=(-0.259, 0.092))
