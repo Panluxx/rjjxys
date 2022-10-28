@@ -14,7 +14,7 @@ from Common.basepage import BasePage
 
 
 def get_path(image):
-    module_path = os.path.join(p_path.picture_path, 'module')
+    module_path = os.path.join(p_path.picture_path, 'democlass')
     return os.path.join(module_path, image)
 
 
