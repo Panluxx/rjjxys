@@ -18,70 +18,70 @@ from Setting.constant import resource_name, book_code, resources_save_dir
 
 def get_path(image):
     resources_path = os.path.join(p_path.picture_path, 'resources')
-    return os.path.join(resources_path, image)
+    return os.path.join(resources_path, f'{image}.png')
 
 
 @pytest.mark.usefixtures('login')
 class TestResources(BasePage):
     @pytest.mark.parametrize("test_data", resource_name)
     def test_import_resources(self, login, test_data):
-        self.touch(get_path('我的资源.png'))
-        self.touch(get_path('导入.png'))
-        if self.exists(get_path('路径存在.png')):
+        self.touch(get_path('我的资源'))
+        self.touch(get_path('导入'))
+        if self.exists(get_path('路径存在')):
             pass
         else:
-            self.touch(get_path('下拉框.png'))
-            self.touch(get_path('路径.png'))
+            self.touch(get_path('下拉框'))
+            self.touch(get_path('路径'))
             # 文件路径
             self.text(p_path.resources_path)
             SendKeys('{ENTER}')
-        self.touch(get_path('输入文件名.png'))
+        self.touch(get_path('输入文件名'))
         self.text(test_data['name'])
-        self.touch(get_path('打开.png'))
+        self.touch(get_path('打开'))
         sleep(3)
         if test_data['name'] == '音频.mp3':
-            self.assert_exists(get_path('音频.png'), msg='对比资源封面')
+            self.assert_exists(get_path('音频'), msg='对比资源封面')
         elif test_data['name'] == '视频.mp4':
-            self.assert_exists(get_path('视频.png'), msg='对比资源封面')
+            self.assert_exists(get_path('视频'), msg='对比资源封面')
         elif test_data['name'] == '图片.jpg':
-            self.assert_exists(get_path('图片.png'), msg='对比资源封面')
+            self.assert_exists(get_path('图片'), msg='对比资源封面')
         elif test_data['name'] == '动画.swf':
-            self.assert_exists(get_path('动画.png'), msg='对比资源封面')
+            self.assert_exists(get_path('动画'), msg='对比资源封面')
         elif test_data['name'] == '文件.xlsx':
-            self.assert_exists(get_path('文件.png'), msg='对比资源封面')
+            self.assert_exists(get_path('文件'), msg='对比资源封面')
         elif test_data['name'] == '文档.docx':
-            self.assert_exists(get_path('文档.png'), msg='对比资源封面')
+            self.assert_exists(get_path('文档'), msg='对比资源封面')
         else:
-            self.assert_exists(get_path('课件.png'), msg='对比资源封面')
+            self.assert_exists(get_path('课件'), msg='对比资源封面')
 
     def test_export_resources(self, login):
-        self.touch(get_path('我的资源.png'))
-        self.touch(get_path('导出.png'))
-        self.touch(get_path('更改目录.png'))
-        self.touch(get_path('下拉框.png'))
-        self.touch(get_path('路径.png'))
+        self.touch(get_path('我的资源'))
+        self.touch(get_path('导出'))
+        self.touch(get_path('更改目录'))
+        self.touch(get_path('下拉框'))
+        self.touch(get_path('路径'))
         # 存放位置
         self.text(resources_save_dir)
         SendKeys('{ENTER}')
-        self.touch(get_path('保存.png'))
-        self.touch(get_path('勾选资源.png'))
-        self.touch(get_path('确定.png'))
-        self.assert_exists(get_path('导出提示.png'), msg='对比导出提示')
+        self.touch(get_path('保存'))
+        self.touch(get_path('勾选资源'))
+        self.touch(get_path('确定'))
+        self.assert_exists(get_path('导出提示'), msg='对比导出提示')
 
     def test_create_folder(self, login):
-        if self.exists(get_path('导出提示.png')):
+        if self.exists(get_path('导出提示')):
             sleep(60)
-        self.touch(get_path('我的资源.png'))
-        self.touch(get_path('新建文件夹.png'))
+        self.touch(get_path('我的资源'))
+        self.touch(get_path('新建文件夹'))
         self.text('test')
         SendKeys('{ENTER}')
-        self.assert_exists(get_path('文件夹名称.png'), msg='对比文件夹名称')
+        self.assert_exists(get_path('文件夹名称'), msg='对比文件夹名称')
 
     def test_download(self, login):
-        self.touch(get_path('我的资源.png'))
-        self.touch(get_path('打开列表.png'))
-        self.assert_exists(get_path('下载列表.png'), msg='检查是否打开列表')
-        self.touch(get_path('关闭.png'))
+        self.touch(get_path('我的资源'))
+        self.touch(get_path('打开列表'))
+        self.assert_exists(get_path('下载列表'), msg='检查是否打开列表')
+        self.touch(get_path('关闭'))
 
     def test_add(self, login):
         self.touch(get_path('我的资源.png'))

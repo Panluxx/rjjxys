@@ -48,8 +48,11 @@ class BasePage:
             logger.warn(f'{msg}值非法')
             raise e
 
-    def swipe(self):
-        pass
+    def swipe(self, filepath, record_pos=None, resolution=(1920, 1080), vector=None):
+        try:
+            swipe(self.template(filepath, record_pos=record_pos, resolution=resolution), vector=vector)
+        except Exception as e:
+            raise e
 
     def assert_exists(self, filepath, record_pos=None, resolution=(1920, 1080), msg=''):
         try:
@@ -66,4 +69,3 @@ class BasePage:
         except Exception as e:
             logger.error('无法清除')
             raise e
-
