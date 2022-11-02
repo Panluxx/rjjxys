@@ -1,0 +1,223 @@
+{
+  "uid" : "7b57d2781b755fd7",
+  "name" : "test_login",
+  "fullName" : "TestCases.test_login.TestLogin#test_login",
+  "historyId" : "0598ee52662104f36194376c5690f584",
+  "time" : {
+    "start" : 1667375665107,
+    "stop" : 1667375695354,
+    "duration" : 30247
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1667375664651,
+      "stop" : 1667375665106,
+      "duration" : 455
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5da50b38983458d5",
+      "name" : "输入用户名18377560722",
+      "source" : "5da50b38983458d5.png",
+      "type" : "image/png",
+      "size" : 1346772
+    }, {
+      "uid" : "f482363d8f36d3c9",
+      "name" : "输入密码",
+      "source" : "f482363d8f36d3c9.png",
+      "type" : "image/png",
+      "size" : 1346173
+    }, {
+      "uid" : "a6ea7c78d76e9fae",
+      "name" : "输入用户名Test@321",
+      "source" : "a6ea7c78d76e9fae.png",
+      "type" : "image/png",
+      "size" : 1344778
+    }, {
+      "uid" : "4cd016ee224aea2b",
+      "name" : "勾选密码",
+      "source" : "4cd016ee224aea2b.png",
+      "type" : "image/png",
+      "size" : 1345621
+    }, {
+      "uid" : "968a483c5174e88b",
+      "name" : "勾选协议",
+      "source" : "968a483c5174e88b.png",
+      "type" : "image/png",
+      "size" : 1345119
+    }, {
+      "uid" : "b2ba590032a307e9",
+      "name" : "登录",
+      "source" : "b2ba590032a307e9.png",
+      "type" : "image/png",
+      "size" : 1350253
+    }, {
+      "uid" : "b8e8f22d6cf059ee",
+      "name" : "检查首页logo",
+      "source" : "b8e8f22d6cf059ee.png",
+      "type" : "image/png",
+      "size" : 486396
+    }, {
+      "uid" : "4cb4f26153a8305b",
+      "name" : "关闭窗口",
+      "source" : "4cb4f26153a8305b.png",
+      "type" : "image/png",
+      "size" : 398439
+    }, {
+      "uid" : "b9b10879b4a9da5e",
+      "name" : "确定关闭",
+      "source" : "b9b10879b4a9da5e.png",
+      "type" : "image/png",
+      "size" : 403109
+    }, {
+      "uid" : "c9af00d4203c6acd",
+      "name" : "log",
+      "source" : "c9af00d4203c6acd.txt",
+      "type" : "text/plain",
+      "size" : 18066
+    }, {
+      "uid" : "fe681433b3663127",
+      "name" : "stderr",
+      "source" : "fe681433b3663127.txt",
+      "type" : "text/plain",
+      "size" : 17323
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 11,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1667375695354,
+      "stop" : 1667375707650,
+      "duration" : 12296
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7f43104490c11feb",
+      "name" : "关闭",
+      "source" : "7f43104490c11feb.png",
+      "type" : "image/png",
+      "size" : 1899975
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('open_client')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "11956-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a58dc90871be6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667375277523,
+        "stop" : 1667375307858,
+        "duration" : 30335
+      }
+    }, {
+      "uid" : "21b300ce45b5a8cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667375000385,
+        "stop" : 1667375026086,
+        "duration" : 25701
+      }
+    }, {
+      "uid" : "3686ce9ff85bb213",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667374778798,
+        "stop" : 1667374797844,
+        "duration" : 19046
+      }
+    }, {
+      "uid" : "7bce49eacc3b82ba",
+      "status" : "broken",
+      "statusDetails" : "TypeError: join() argument must be str, bytes, or os.PathLike object, not 'tuple'",
+      "time" : {
+        "start" : 1667374687115,
+        "stop" : 1667374689484,
+        "duration" : 2369
+      }
+    }, {
+      "uid" : "4c877cb37a2355b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667373889217,
+        "stop" : 1667373908090,
+        "duration" : 18873
+      }
+    }, {
+      "uid" : "cdd9d3e55187935a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667373407482,
+        "stop" : 1667373431982,
+        "duration" : 24500
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('open_client')", "login" ]
+  },
+  "source" : "7b57d2781b755fd7.json",
+  "parameterValues" : [ ]
+}

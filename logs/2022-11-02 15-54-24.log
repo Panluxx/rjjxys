@@ -1,0 +1,41 @@
+2022-11-02 15:54:24,650 rj_jxy INFO conftest.py [第23行] **********开始连接/启动设备**********
+2022-11-02 15:54:25,105 rj_jxy INFO conftest.py [第30行] **********连接/启动设备正常**********
+2022-11-02 15:54:25,107 rj_jxy INFO basepage.py [第19行] 账号输入框存在 : 查找：E:\Git\rjjxy\Picture\login\账号.png 图片
+2022-11-02 15:54:26,655 rj_jxy INFO basepage.py [第30行] 账号输入框存在页面：E:\Git\rjjxy\Picture\login\账号.png 图片存在
+2022-11-02 15:54:27,689 rj_jxy INFO basepage.py [第51行] 输入文本 18377560722
+2022-11-02 15:54:30,112 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/输入用户名18377560722_2022-11-02 15_54_27.png
+2022-11-02 15:54:30,114 rj_jxy INFO basepage.py [第19行] 密码输入框 : 查找：E:\Git\rjjxy\Picture\login\清空密码.png 图片
+2022-11-02 15:54:33,437 rj_jxy INFO basepage.py [第30行] 密码输入框页面：E:\Git\rjjxy\Picture\login\清空密码.png 图片存在
+2022-11-02 15:54:33,437 rj_jxy INFO basepage.py [第19行] 输入密码 : 查找：E:\Git\rjjxy\Picture\login\输入密码.png 图片
+2022-11-02 15:54:34,525 rj_jxy INFO basepage.py [第41行] 输入密码: 点击 E:\Git\rjjxy\Picture\login\输入密码.png 图片
+2022-11-02 15:54:36,932 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/输入密码_2022-11-02 15_54_34.png
+2022-11-02 15:54:37,550 rj_jxy INFO basepage.py [第51行] 输入文本 Test@321
+2022-11-02 15:54:39,976 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/输入用户名Test@321_2022-11-02 15_54_37.png
+2022-11-02 15:54:39,978 rj_jxy INFO basepage.py [第19行] 记住密码未勾选 : 查找：E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:40,120 rj_jxy INFO basepage.py [第30行] 记住密码未勾选页面：E:\Git\rjjxy\Picture\login\未勾选.png 图片存在
+2022-11-02 15:54:40,121 rj_jxy INFO basepage.py [第19行] 勾选密码 : 查找：E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:41,257 rj_jxy INFO basepage.py [第41行] 勾选密码: 点击 E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:43,671 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/勾选密码_2022-11-02 15_54_41.png
+2022-11-02 15:54:43,673 rj_jxy INFO basepage.py [第19行] 记住密码未勾选 : 查找：E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:43,804 rj_jxy INFO basepage.py [第30行] 记住密码未勾选页面：E:\Git\rjjxy\Picture\login\未勾选.png 图片存在
+2022-11-02 15:54:43,804 rj_jxy INFO basepage.py [第19行] 勾选协议 : 查找：E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:44,942 rj_jxy INFO basepage.py [第41行] 勾选协议: 点击 E:\Git\rjjxy\Picture\login\未勾选.png 图片
+2022-11-02 15:54:47,358 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/勾选协议_2022-11-02 15_54_44.png
+2022-11-02 15:54:47,360 rj_jxy INFO basepage.py [第19行] 登录 : 查找：E:\Git\rjjxy\Picture\login\登录.png 图片
+2022-11-02 15:54:48,458 rj_jxy INFO basepage.py [第41行] 登录: 点击 E:\Git\rjjxy\Picture\login\登录.png 图片
+2022-11-02 15:54:50,996 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/登录_2022-11-02 15_54_48.png
+2022-11-02 15:54:50,998 rj_jxy INFO basepage.py [第19行] 检查首页logo : 查找：E:\Git\rjjxy\Picture\login\首页logo.png 图片
+2022-11-02 15:54:51,080 rj_jxy INFO basepage.py [第70行] 对检查首页logo图片进行断言：结果为：True
+2022-11-02 15:54:51,759 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/检查首页logo_2022-11-02 15_54_51.png
+2022-11-02 15:54:51,760 rj_jxy INFO basepage.py [第19行] 关闭窗口 : 查找：E:\Git\rjjxy\Picture\login\关闭窗口.png 图片
+2022-11-02 15:54:52,839 rj_jxy INFO basepage.py [第41行] 关闭窗口: 点击 E:\Git\rjjxy\Picture\login\关闭窗口.png 图片
+2022-11-02 15:54:53,506 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/关闭窗口_2022-11-02 15_54_52.png
+2022-11-02 15:54:53,507 rj_jxy INFO basepage.py [第19行] 确定关闭 : 查找：E:\Git\rjjxy\Picture\login\确定关闭.png 图片
+2022-11-02 15:54:54,657 rj_jxy INFO basepage.py [第41行] 确定关闭: 点击 E:\Git\rjjxy\Picture\login\确定关闭.png 图片
+2022-11-02 15:54:55,351 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/确定关闭_2022-11-02 15_54_54.png
+2022-11-02 15:54:57,504 rj_jxy INFO basepage.py [第19行] 存在资源 : 查找：E:\Git\rjjxy\Picture\login\存放资源的文件.png 图片
+2022-11-02 15:55:01,089 rj_jxy INFO basepage.py [第30行] 存在资源页面：E:\Git\rjjxy\Picture\login\存放资源的文件.png 图片存在
+2022-11-02 15:55:01,089 rj_jxy INFO basepage.py [第19行] 关闭 : 查找：E:\Git\rjjxy\Picture\login\清除后关闭.png 图片
+2022-11-02 15:55:02,241 rj_jxy INFO basepage.py [第41行] 关闭: 点击 E:\Git\rjjxy\Picture\login\清除后关闭.png 图片
+2022-11-02 15:55:05,632 rj_jxy INFO basepage.py [第96行] 截取当前网页成功并存储在: E:\Git\rjjxy\Report\screenshots/关闭_2022-11-02 15_55_02.png
+2022-11-02 15:55:07,650 rj_jxy INFO conftest.py [第43行] **********测试结束/关闭客户端**********

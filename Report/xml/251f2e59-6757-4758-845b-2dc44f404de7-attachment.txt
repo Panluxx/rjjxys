@@ -1,0 +1,152 @@
+[15:38:07][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxy\Picture\login\账号.png)
+[15:38:07][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:07][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (244, 620), 'rectangle': ((213, 602), (213, 638), (275, 638), (275, 602)), 'confidence': 0.0747687891125679}
+[15:38:07][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.02 s.
+[15:38:07][DEBUG]<airtest.core.api> try match with TemplateMatching
+[15:38:07][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.7, result={'result': (1761, 93), 'rectangle': ((1729, 75), (1729, 111), (1793, 111), (1793, 75)), 'confidence': 0.24457231163978577}
+[15:38:07][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[15:38:07][DEBUG]<airtest.core.api> try match with SIFTMatching
+[15:38:08][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.65 s.
+[15:38:08][DEBUG]<airtest.core.api> try match with BRISKMatching
+[15:38:08][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.26 s.
+[15:38:08][DEBUG]<airtest.core.api> match result: None
+[15:38:08][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:08][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (777, 589), 'rectangle': ((746, 571), (746, 607), (808, 607), (808, 571)), 'confidence': 0.9656999707221985}
+[15:38:08][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.01 s.
+[15:38:08][DEBUG]<airtest.core.api> match result: {'result': (777, 589), 'rectangle': ((746, 571), (746, 607), (808, 607), (808, 571)), 'confidence': 0.9656999707221985, 'time': 0.013992786407470703}
+--- Logging error ---
+Traceback (most recent call last):
+  File "E:\python3.8.5\lib\logging\__init__.py", line 1081, in emit
+    msg = self.format(record)
+  File "E:\python3.8.5\lib\logging\__init__.py", line 925, in format
+    return fmt.format(record)
+  File "E:\python3.8.5\lib\logging\__init__.py", line 664, in format
+    record.message = record.getMessage()
+  File "E:\python3.8.5\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\core\cv.py", line 150, in __repr__
+    filepath = self.filepath if PY3 else self.filepath.encode(sys.getfilesystemencoding())
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\core\cv.py", line 143, in filepath
+    filepath = os.path.join(dirname, self.filename)
+  File "E:\python3.8.5\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "E:\python3.8.5\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'tuple'
+Call stack:
+  File "E:/Git/rjjxy/run.py", line 35, in <module>
+    test_result = pytest.main(args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\config\__init__.py", line 164, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\main.py", line 315, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\main.py", line 268, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\main.py", line 322, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\main.py", line 347, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 111, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 130, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 219, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 258, in call_runtest_hook
+    return CallInfo.from_call(
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 338, in from_call
+    result: Optional[TResult] = func()
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 259, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\runner.py", line 166, in pytest_runtest_call
+    item.runtest()
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\python.py", line 1761, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "E:\Git\rjjxy\venv\lib\site-packages\pluggy\_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "E:\Git\rjjxy\venv\lib\site-packages\_pytest\python.py", line 192, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "E:\Git\rjjxy\TestCases\test_login.py", line 29, in test_login
+    self.double_click(name, img_doc='双击用户名输入框')
+  File "E:\Git\rjjxy\Common\basepage.py", line 79, in double_click
+    double_click(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc))
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\utils\logwraper.py", line 122, in wrapper
+    res = f(*args, **kwargs)
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\core\api.py", line 386, in double_click
+    pos = loop_find(v, timeout=ST.FIND_TIMEOUT)
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\utils\logwraper.py", line 122, in wrapper
+    res = f(*args, **kwargs)
+  File "E:\Git\rjjxy\venv\lib\site-packages\airtest\core\cv.py", line 59, in loop_find
+    G.LOGGING.info("Try finding: %s", query)
+Unable to print the message and arguments - possible formatting error.
+Use the traceback above to help find the error.
+[15:38:12][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxy\Picture\login\存放资源的文件.png)
+[15:38:12][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:12][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (808, 634), 'rectangle': ((732, 619), (732, 650), (885, 650), (885, 619)), 'confidence': 0.34214654564857483}
+[15:38:12][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.02 s.
+[15:38:12][DEBUG]<airtest.core.api> try match with TemplateMatching
+[15:38:12][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.7, result={'result': (800, 633), 'rectangle': ((723, 617), (723, 650), (877, 650), (877, 617)), 'confidence': 0.31628841161727905}
+[15:38:12][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.08 s.
+[15:38:12][DEBUG]<airtest.core.api> try match with SIFTMatching
+[15:38:12][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.53 s.
+[15:38:12][DEBUG]<airtest.core.api> try match with BRISKMatching
+[15:38:13][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[15:38:13][DEBUG]<airtest.core.api> match result: None
+[15:38:13][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:13][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (829, 231), 'rectangle': ((753, 216), (753, 247), (906, 247), (906, 216)), 'confidence': 0.44766056537628174}
+[15:38:13][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.02 s.
+[15:38:13][DEBUG]<airtest.core.api> try match with TemplateMatching
+[15:38:13][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.7, result={'result': (986, 401), 'rectangle': ((909, 385), (909, 418), (1063, 418), (1063, 385)), 'confidence': 0.49359142780303955}
+[15:38:13][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.08 s.
+[15:38:13][DEBUG]<airtest.core.api> try match with SIFTMatching
+[15:38:14][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.50 s.
+[15:38:14][DEBUG]<airtest.core.api> try match with BRISKMatching
+[15:38:14][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[15:38:14][DEBUG]<airtest.core.api> match result: None
+[15:38:14][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:14][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (829, 231), 'rectangle': ((753, 216), (753, 247), (906, 247), (906, 216)), 'confidence': 0.44766056537628174}
+[15:38:14][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.02 s.
+[15:38:14][DEBUG]<airtest.core.api> try match with TemplateMatching
+[15:38:15][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.7, result={'result': (986, 401), 'rectangle': ((909, 385), (909, 418), (1063, 418), (1063, 385)), 'confidence': 0.49359142780303955}
+[15:38:15][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.08 s.
+[15:38:15][DEBUG]<airtest.core.api> try match with SIFTMatching
+[15:38:15][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.50 s.
+[15:38:15][DEBUG]<airtest.core.api> try match with BRISKMatching
+[15:38:15][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[15:38:15][DEBUG]<airtest.core.api> match result: None
+[15:38:15][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxy\Picture\login\清除后关闭.png)
+[15:38:15][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[15:38:15][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.7, result={'result': (0, 0), 'rectangle': ((0, 0), (0, 0), (0, 0), (0, 0)), 'confidence': 0}
+[15:38:15][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.00 s.
+[15:38:15][DEBUG]<airtest.core.api> try match with TemplateMatching
+[15:38:15][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.7, result={'result': (1693, 234), 'rectangle': ((1671, 223), (1671, 246), (1715, 246), (1715, 223)), 'confidence': 0.9999969005584717}
+[15:38:15][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.07 s.
+[15:38:15][DEBUG]<airtest.core.api> match result: {'result': (1693, 234), 'rectangle': ((1671, 223), (1671, 246), (1715, 246), (1715, 223)), 'confidence': 0.9999969005584717, 'time': 0.07397675514221191}

@@ -21,5 +21,11 @@ class ProjectPath:
     # 资源
     resources_path = os.path.join(root_path, 'Resources')
 
+    # 报告
+    report_path = os.path.join(root_path, 'Report')
+
+    # 截图
+    screenshots_path = os.path.join(report_path, 'screenshots')
+
 
 p_path = ProjectPath()

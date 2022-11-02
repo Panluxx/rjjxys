@@ -8,64 +8,92 @@
 
 from airtest.core.api import *
 from Common.logger import logger
+from Common.config import p_path
+import allure
 
 
 class BasePage:
 
-    def template(self, filepath, record_pos=None, resolution=(1920, 1080)):
+    def template(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080)):
         try:
-            logger.info(f'开始寻找元素：{filepath}')
+            logger.info(f"{img_doc} : 查找：{filepath} 图片")
             path = Template(filepath, record_pos=record_pos, resolution=resolution)
-        except Exception as e:
-            logger.warn(f'{filepath}元素无法点击')
-            raise e
-        else:
             return path
-
-    def exists(self, filepath, record_pos=None, resolution=(1920, 1080)):
-        try:
-            path = exists(self.template(filepath, record_pos=record_pos, resolution=resolution))
-            logger.info(f'{filepath}元素存在')
         except Exception as e:
-            logger.warn(f'{filepath}元素不存在')
+            logger.warn(f'找不到：{filepath}图片')
+            self.save_page_screenshots(img_doc)
+            raise e
+
+    def exists(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080)):
+        try:
+            path = exists(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc))
+            logger.info(f'{img_doc}页面：{filepath} 图片存在')
+        except Exception as e:
+            logger.warn(f'{filepath} 图片不存在')
+            self.save_page_screenshots(img_doc)
             return False
         else:
             return path
 
-    def touch(self, filepath, record_pos=None, resolution=(1920, 1080)):
+    def touch(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080)):
         try:
-            touch(self.template(filepath, record_pos=record_pos, resolution=resolution))
-            logger.info(f'开始点击图片：{filepath}')
+            touch(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc))
+            logger.info(f"{img_doc}: 点击 {filepath} 图片")
+            self.save_page_screenshots(img_doc)
         except Exception as e:
-            logger.warn(f'{filepath}图片无法点击')
+            logger.warn(f'{filepath} 图片无法点击')
+            self.save_page_screenshots(img_doc)
             raise e
 
-    def text(self, msg=None):
+    def text(self, msg=None, img_doc=''):
         try:
             text(msg)
-            logger.info(f'输入text值为: {msg}')
+            logger.info(f"输入文本 {msg}")
+            self.save_page_screenshots(img_doc)
         except Exception as e:
-            logger.warn(f'{msg}值非法')
+            logger.error("输入文本失败：")
+            self.save_page_screenshots(img_doc)
             raise e
 
-    def swipe(self, filepath, record_pos=None, resolution=(1920, 1080), vector=None):
+    def swipe(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080), vector=None):
         try:
-            swipe(self.template(filepath, record_pos=record_pos, resolution=resolution), vector=vector)
+            swipe(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc), vector=vector)
+            self.save_page_screenshots(img_doc)
         except Exception as e:
+            self.save_page_screenshots(img_doc)
             raise e
 
-    def assert_exists(self, filepath, record_pos=None, resolution=(1920, 1080), msg=''):
+    def assert_exists(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080), msg=''):
         try:
-            assert_exists(self.template(filepath, record_pos=record_pos, resolution=resolution), msg=msg)
-            logger.info(f'断言成功：msg值为：{msg}')
+            assert_exists(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc),
+                          msg=msg)
+            logger.info(f'对{img_doc}图片进行断言：结果为：True')
+            self.save_page_screenshots(img_doc)
         except Exception as e:
-            logger.error('断言失败')
+            logger.error(f'对{img_doc}图片进行断言：结果为：False')
+            self.save_page_screenshots(img_doc)
             raise e
 
-    def double_click(self, filepath, record_pos=None, resolution=(1920, 1080)):
+    def double_click(self, filepath, img_doc='', record_pos=None, resolution=(1920, 1080)):
         try:
-            double_click(self.template(filepath, record_pos=record_pos, resolution=resolution))
-            logger.info(f'双击清除图片为：{filepath}')
+            double_click(self.template(filepath, record_pos=record_pos, resolution=resolution, img_doc=img_doc))
+            logger.info(f'双击:{filepath} 图片')
+            self.save_page_screenshots(img_doc)
         except Exception as e:
-            logger.error('无法清除')
+            logger.error('图片双击失败')
+            self.save_page_screenshots(img_doc)
             raise e
+
+    def save_page_screenshots(self, img_doc='', quality=None, max_size=None):
+        now = time.strftime("%Y-%m-%d %H_%M_%S")
+        screenshots_path = p_path.screenshots_path + "/{}_{}.png".format(img_doc, now)
+        try:
+            snapshot(filename=screenshots_path, msg=img_doc, quality=quality, max_size=max_size)
+        except Exception as e:
+            logger.error("当前网页截图失败")
+            raise e
+        else:
+            logger.info("截取当前网页成功并存储在: {}".format(screenshots_path))
+            with open(screenshots_path, mode='rb') as f:
+                file = f.read()
+                allure.attach(file, img_doc, allure.attachment_type.PNG)

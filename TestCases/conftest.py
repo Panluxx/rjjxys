@@ -34,10 +34,10 @@ def open_client():
     yield
     sleep(2)
     webbrowser.open(os.path.realpath(dir()))
-    if BasePage().exists(get_path('存放资源的文件.png')):
-        BasePage().touch(get_path('存放资源的文件.png'))
+    if BasePage().exists(get_path('存放资源的文件.png'), img_doc='存在资源'):
+        BasePage().touch(get_path('存放资源的文件.png'), img_doc='存在资源')
         SendKeys('{DELETE}')
-    BasePage().touch(get_path('清除后关闭.png'))
+    BasePage().touch(get_path('清除后关闭.png'), img_doc='关闭')
     sleep(2)
     APP.kill()
     logger.info('*' * 10 + '测试结束/关闭客户端' + '*' * 10)

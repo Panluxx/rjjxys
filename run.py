@@ -31,9 +31,7 @@ if __name__ == '__main__':
     """
     # pytest.main(["-vs", "./TestCases/test_login.py"])
 
-    args = ["--alluredir", xml_report_path]
+    args = ["-m", "login", "--alluredir", xml_report_path]
     test_result = pytest.main(args)
     cmd = "allure generate {0} -o {1} --clean".format(xml_report_path, detail_report_path)
     reportResult = batch(cmd)
-
-
