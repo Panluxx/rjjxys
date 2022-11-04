@@ -19,10 +19,25 @@ def get_path(image):
     return os.path.join(login_path, f'{image}.png')
 
 
-@pytest.mark.usefixtures('open_client')
+@pytest.fixture(scope='function')
+def click_client(open_client):
+    BasePage().touch(get_path('调起客户端'), img_doc='调起客户端')
+
+
+@pytest.mark.usefixtures('click_client')
 class TestLogin(BasePage):
     @pytest.mark.login
-    def test_login(self, open_client):
+    def test_user_agreement(self, click_client):
+        self.touch(get_path('用户协议'), img_doc='打开用户协议')
+        self.assert_exists(filepath=get_path('用户协议地址'), img_doc='查看地址')
+        self.assert_exists(filepath=get_path('用户协议标题'), img_doc='查看标题')
+
+    def test_privacy_policy(self, click_client):
+        self.touch(get_path('隐私政策'), img_doc='打开隐私政策')
+        self.assert_exists(filepath=get_path('隐私政策地址'), img_doc='查看地址')
+        self.assert_exists(filepath=get_path('隐私政策标题'), img_doc='查看标题')
+
+    def test_login(self, click_client):
         name = self.exists(get_path('账号'), img_doc='账号输入框存在')
         if name:
             name = (name[0] + 80, name[1])
@@ -41,10 +56,10 @@ class TestLogin(BasePage):
         if self.exists(get_path('未勾选'), img_doc='记住密码未勾选'):
             self.touch(get_path('未勾选'), img_doc='勾选记住密码')
         # 勾选协议
-        if self.exists(get_path('未勾选'), img_doc='记住密码未勾选'):
+        if self.exists(get_path('未勾选'), img_doc='记住协议未勾选'):
             self.touch(get_path('未勾选'), img_doc='勾选并同意协议')
         # 登录
-        self.touch(get_path('登录'), img_doc='登录')
-        self.assert_exists(filepath=get_path('首页logo'), msg="登录成功后_存在logo", img_doc='检查首页logo')
+        self.touch(get_path('登录'), img_doc='点击登录')
+        self.assert_exists(filepath=get_path('首页logo'), img_doc='检查首页logo')
         self.touch(get_path('关闭窗口'), img_doc='关闭窗口')
         self.touch(get_path('确定关闭'), record_pos=(-0.259, 0.092), img_doc='确定关闭')

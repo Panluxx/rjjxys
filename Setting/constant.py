@@ -28,8 +28,8 @@ username = '18377560722'
 password = 'Test@321'
 
 # 资源
-resource_name = [{"name": "音频.mp3"}, {"name": "视频.mp4"}, {"name": "图片.jpg"}, {"name": "动画.swf"},
-                 {"name": "文件.xlsx"}, {"name": "文档.docx"}, {"name": "课件.pptx"}]
+resource_name = [{"name": "课件.pptx"}, {"name": "音频.mp3"}, {"name": "视频.mp4"}, {"name": "图片.jpg"}, {"name": "动画.swf"},
+                 {"name": "文件.xlsx"}, {"name": "文档.docx"}]
 
 # 激活码
 book_code = 'A12345678'

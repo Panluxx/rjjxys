@@ -23,9 +23,9 @@ pytest.mark.usefixtures('login')
 
 class TestDesign(BasePage):
     def test_design(self, login):
-        self.touch(get_path('书本封面'))
+        self.touch(get_path('书本封面'), img_doc='点击书本封面')
         sleep(10)
-        self.touch(get_path('教学设计'))
-        self.touch(get_path('资源封面'))
-        self.assert_exists(get_path('资源内容'), msg='对比打开的资源是否正确')
-        self.touch(get_path('关闭资源'))
+        self.touch(get_path('教学设计'), img_doc='点击教学设计')
+        self.touch(get_path('资源封面'), img_doc='点击资源封面')
+        self.assert_exists(get_path('资源内容'), img_doc='检查资源内容')
+        self.touch(get_path('关闭资源'), img_doc='点击关闭资源')

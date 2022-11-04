@@ -2,14 +2,300 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "test_login",
-    "uid" : "7b57d2781b755fd7",
+    "name" : "test_courseware",
+    "uid" : "cd02caab74a075a4",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1667375665107,
-      "stop" : 1667375695354,
-      "duration" : 30247
+      "start" : 1667552441244,
+      "stop" : 1667552477769,
+      "duration" : 36525
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_demo_class",
+    "uid" : "7621debff30c54f6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552485482,
+      "stop" : 1667552571020,
+      "duration" : 85538
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_design",
+    "uid" : "d871af038ea0da05",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552578583,
+      "stop" : 1667552611728,
+      "duration" : 33145
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_class_room",
+    "uid" : "f8f6ea7d1972e8cc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552619283,
+      "stop" : 1667552673597,
+      "duration" : 54314
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_extend",
+    "uid" : "6cc38e1a169975dd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552681637,
+      "stop" : 1667552723336,
+      "duration" : 41699
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_login",
+    "uid" : "72240b6b9da473a4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552725801,
+      "stop" : 1667552744571,
+      "duration" : 18770
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_user_agreement",
+    "uid" : "def54447ae1de3ef",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1667552744574,
+      "stop" : 1667552765000,
+      "duration" : 20426
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_privacy_policy",
+    "uid" : "b5c28b2c9bfd637",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1667552765217,
+      "stop" : 1667552786544,
+      "duration" : 21327
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_import_resources[test_data0]",
+    "uid" : "a46aeef578a957de",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552796947,
+      "stop" : 1667552825307,
+      "duration" : 28360
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '课件.pptx'}" ]
+  }, {
+    "name" : "test_import_resources[test_data1]",
+    "uid" : "f62c87e9432ec310",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552825312,
+      "stop" : 1667552839158,
+      "duration" : 13846
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '音频.mp3'}" ]
+  }, {
+    "name" : "test_import_resources[test_data2]",
+    "uid" : "23bbabaec1783c32",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552839162,
+      "stop" : 1667552853665,
+      "duration" : 14503
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '视频.mp4'}" ]
+  }, {
+    "name" : "test_import_resources[test_data3]",
+    "uid" : "23ace9e8acc11ebe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552853669,
+      "stop" : 1667552867303,
+      "duration" : 13634
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '图片.jpg'}" ]
+  }, {
+    "name" : "test_import_resources[test_data4]",
+    "uid" : "64e9a549e73a3bad",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552867307,
+      "stop" : 1667552882123,
+      "duration" : 14816
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '动画.swf'}" ]
+  }, {
+    "name" : "test_import_resources[test_data5]",
+    "uid" : "2f0b5e9d9ecd9f1e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552882127,
+      "stop" : 1667552908006,
+      "duration" : 25879
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '文件.xlsx'}" ]
+  }, {
+    "name" : "test_import_resources[test_data6]",
+    "uid" : "810eb8ffa6beeaed",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1667552908010,
+      "stop" : 1667552941553,
+      "duration" : 33543
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '文档.docx'}" ]
+  }, {
+    "name" : "test_edit_resources",
+    "uid" : "498981671b35a3c9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552941596,
+      "stop" : 1667552952093,
+      "duration" : 10497
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_rename",
+    "uid" : "7129f0236a9b083a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552952096,
+      "stop" : 1667552955221,
+      "duration" : 3125
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_del",
+    "uid" : "4abd4610e1872139",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552955224,
+      "stop" : 1667552958444,
+      "duration" : 3220
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_export_resources",
+    "uid" : "25d53a67d90bb274",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1667552958447,
+      "stop" : 1667552967145,
+      "duration" : 8698
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_create_folder",
+    "uid" : "806983a849fa0b74",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1667552967283,
+      "stop" : 1667552993763,
+      "duration" : 26480
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_download",
+    "uid" : "f6c4d4616e8dbcd9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552993796,
+      "stop" : 1667552997449,
+      "duration" : 3653
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_add",
+    "uid" : "8ba90aa785b6b769",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667552997451,
+      "stop" : 1667553003367,
+      "duration" : 5916
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_teacher_book",
+    "uid" : "535f6d96425a6423",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1667553017949,
+      "stop" : 1667553065340,
+      "duration" : 47391
     },
     "flaky" : false,
     "newFailed" : false,

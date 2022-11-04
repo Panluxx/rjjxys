@@ -21,12 +21,13 @@ pytest.mark.usefixtures('login')
 
 
 class TestCourseware(BasePage):
+    @pytest.mark.courseware
     def test_courseware(self, login):
-        self.touch(get_path('书本封面'))
+        self.touch(get_path('书本封面'), img_doc='点击书本封面')
         sleep(10)
-        self.touch(get_path('教学课件'))
-        self.touch(get_path('资源'))
+        self.touch(get_path('教学课件'), img_doc='点击教学课件')
+        self.touch(get_path('资源'), img_doc='点击资源')
         sleep(2)
-        self.assert_exists(get_path('资源封面'), msg='对比打开的资源是否正确')
+        self.assert_exists(get_path('资源封面'), img_doc='检查资源是否正常打开')
         sleep(2)
-        self.touch(get_path('退出浏览'))
+        self.touch(get_path('退出浏览'), img_doc='点击退出浏览')

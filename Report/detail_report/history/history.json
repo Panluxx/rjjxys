@@ -1,4 +1,234 @@
 {
+  "4cff8373359cf304c9cbb520c0ebe2c5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4abd4610e1872139",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552955224,
+        "stop" : 1667552958444,
+        "duration" : 3220
+      }
+    } ]
+  },
+  "9e03e070c00ff27af5c60f9477cf0987" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8ba90aa785b6b769",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552997451,
+        "stop" : 1667553003367,
+        "duration" : 5916
+      }
+    } ]
+  },
+  "91f0fdb840db430dea6bcee531c48f08" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "498981671b35a3c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552941596,
+        "stop" : 1667552952093,
+        "duration" : 10497
+      }
+    } ]
+  },
+  "1cbbeb6fecaeca62ee78810c02bf119c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "810eb8ffa6beeaed",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Template(E:\\Git\\rjjxy\\Picture\\resources\\文档资源.png) does not exist in screen, message:",
+      "time" : {
+        "start" : 1667552908010,
+        "stop" : 1667552941553,
+        "duration" : 33543
+      }
+    } ]
+  },
+  "53dc1dfcc97ee6ea55b3955f6c481ad2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64e9a549e73a3bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552867307,
+        "stop" : 1667552882123,
+        "duration" : 14816
+      }
+    } ]
+  },
+  "5b2090f4bd15a0f4a5bb7c1c805e6ded" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23ace9e8acc11ebe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552853669,
+        "stop" : 1667552867303,
+        "duration" : 13634
+      }
+    } ]
+  },
+  "b05e54fe5bc989319f37a64e5ed3876b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7129f0236a9b083a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552952096,
+        "stop" : 1667552955221,
+        "duration" : 3125
+      }
+    } ]
+  },
+  "aeebe8581fb8f5af37f48f67d02afca1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2f0b5e9d9ecd9f1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552882127,
+        "stop" : 1667552908006,
+        "duration" : 25879
+      }
+    } ]
+  },
+  "c4bf7909da3435ca231696db09380244" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6c4d4616e8dbcd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552993796,
+        "stop" : 1667552997449,
+        "duration" : 3653
+      }
+    } ]
+  },
+  "70b0299cd9964e3bc3939e23868124fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f8f6ea7d1972e8cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552619283,
+        "stop" : 1667552673597,
+        "duration" : 54314
+      }
+    } ]
+  },
+  "027f931c4ed48327de9e5ae7cb801365" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "def54447ae1de3ef",
+      "status" : "broken",
+      "statusDetails" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxy\\\\Picture\\\\login\\\\用户协议.png) not found in screen'",
+      "time" : {
+        "start" : 1667552744574,
+        "stop" : 1667552765000,
+        "duration" : 20426
+      }
+    } ]
+  },
+  "f17aabbc579baa93044f3c2cd7277275" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6cc38e1a169975dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552681637,
+        "stop" : 1667552723336,
+        "duration" : 41699
+      }
+    } ]
+  },
   "0598ee52662104f36194376c5690f584" : {
     "statistic" : {
       "failed" : 0,
@@ -9,12 +239,205 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7b57d2781b755fd7",
+      "uid" : "72240b6b9da473a4",
       "status" : "passed",
       "time" : {
-        "start" : 1667375665107,
-        "stop" : 1667375695354,
-        "duration" : 30247
+        "start" : 1667552725801,
+        "stop" : 1667552744571,
+        "duration" : 18770
+      }
+    } ]
+  },
+  "1efc1a595aa77c6b153afe02696dd1cd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd02caab74a075a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552441244,
+        "stop" : 1667552477769,
+        "duration" : 36525
+      }
+    } ]
+  },
+  "de7f58c0f8c05314212c223fb80521dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a46aeef578a957de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552796947,
+        "stop" : 1667552825307,
+        "duration" : 28360
+      }
+    } ]
+  },
+  "5f56c6be8e5532427544028c1001e876" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7621debff30c54f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552485482,
+        "stop" : 1667552571020,
+        "duration" : 85538
+      }
+    } ]
+  },
+  "cef86858732aacfa1bd830dc94cbfa9b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23bbabaec1783c32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552839162,
+        "stop" : 1667552853665,
+        "duration" : 14503
+      }
+    } ]
+  },
+  "c7335c777adc8f0516a9f08d7bbeeac1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f62c87e9432ec310",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552825312,
+        "stop" : 1667552839158,
+        "duration" : 13846
+      }
+    } ]
+  },
+  "0adc9767518b772d4100fad22a374fad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "535f6d96425a6423",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667553017949,
+        "stop" : 1667553065340,
+        "duration" : 47391
+      }
+    } ]
+  },
+  "ce38537c62b6987821ffdfb38c428cb9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "25d53a67d90bb274",
+      "status" : "broken",
+      "statusDetails" : "OSError: [Errno 22] Invalid argument: 'E:\\\\Git\\\\rjjxy\\\\Report\\\\screenshots/输入存放路径C:\\\\Users\\\\Administrator\\\\Downloads_2022-11-04 17_09_27.png'",
+      "time" : {
+        "start" : 1667552958447,
+        "stop" : 1667552967145,
+        "duration" : 8698
+      }
+    } ]
+  },
+  "0f70ef75a6a9f8f6a5a99dbde3031ca5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b5c28b2c9bfd637",
+      "status" : "broken",
+      "statusDetails" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxy\\\\Picture\\\\login\\\\隐私政策.png) not found in screen'",
+      "time" : {
+        "start" : 1667552765217,
+        "stop" : 1667552786544,
+        "duration" : 21327
+      }
+    } ]
+  },
+  "6011747e4cb47c72e68ba9c93ce3b029" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d871af038ea0da05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1667552578583,
+        "stop" : 1667552611728,
+        "duration" : 33145
+      }
+    } ]
+  },
+  "198c08054534ed66fb364373e24b4b20" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "806983a849fa0b74",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Template(E:\\Git\\rjjxy\\Picture\\resources\\文件夹名称.png) does not exist in screen, message:",
+      "time" : {
+        "start" : 1667552967283,
+        "stop" : 1667552993763,
+        "duration" : 26480
       }
     } ]
   }

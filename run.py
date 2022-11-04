@@ -9,9 +9,11 @@ import pytest
 import os
 import subprocess
 from Common.config import p_path
+import shutil
 
 xml_report_path = os.path.join(p_path.root_path, 'Report', 'xml')
 detail_report_path = os.path.join(p_path.root_path, 'Report', 'detail_report')
+screenshots_path = os.path.join(p_path.root_path, 'Report', 'screenshots')
 
 
 def batch(CMD):
@@ -30,8 +32,9 @@ if __name__ == '__main__':
                       "--alluredir=Outputs/allure/history"]
     """
     # pytest.main(["-vs", "./TestCases/test_login.py"])
-
-    args = ["-m", "login", "--alluredir", xml_report_path]
+    shutil.rmtree(screenshots_path)
+    os.mkdir(screenshots_path)
+    args = ["--alluredir", xml_report_path]
     test_result = pytest.main(args)
     cmd = "allure generate {0} -o {1} --clean".format(xml_report_path, detail_report_path)
     reportResult = batch(cmd)

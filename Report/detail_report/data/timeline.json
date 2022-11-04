@@ -4,120 +4,572 @@
   "children" : [ {
     "name" : "gtx650-ani",
     "children" : [ {
-      "name" : "11956-MainThread",
+      "name" : "11008-MainThread",
       "children" : [ {
-        "name" : "test_login",
-        "uid" : "7b57d2781b755fd7",
-        "parentUid" : "a3ad6ad761c6557f89ef143c7ed4490d",
+        "name" : "test_import_resources[test_data5]",
+        "uid" : "121f1ed529e2f35f",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "passed",
         "time" : {
-          "start" : 1667375665107,
-          "stop" : 1667375695354,
-          "duration" : 30247
+          "start" : 1667551092366,
+          "stop" : 1667551118027,
+          "duration" : 25661
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '文件.xlsx'}" ]
+      }, {
+        "name" : "test_user_agreement",
+        "uid" : "cacc21982086f24c",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667550944430,
+          "stop" : 1667550966819,
+          "duration" : 22389
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "a3ad6ad761c6557f89ef143c7ed4490d"
-    }, {
-      "name" : "12924-MainThread",
-      "children" : [ {
-        "name" : "test_login",
-        "uid" : "3686ce9ff85bb213",
-        "parentUid" : "b6307eae596cf98d02a6d362a6ffcc68",
+      }, {
+        "name" : "test_import_resources[test_data6]",
+        "uid" : "9b63d46f9064ca3d",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667551118031,
+          "stop" : 1667551153051,
+          "duration" : 35020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '文档.docx'}" ]
+      }, {
+        "name" : "test_courseware",
+        "uid" : "bdca08bbe38ffe9e",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667550619812,
+          "stop" : 1667550667332,
+          "duration" : 47520
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_privacy_policy",
+        "uid" : "ce0b03c8a7776e5d",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667550966846,
+          "stop" : 1667550988887,
+          "duration" : 22041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data4]",
+        "uid" : "272822ec17926464",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "passed",
         "time" : {
-          "start" : 1667374778798,
-          "stop" : 1667374797844,
-          "duration" : 19046
+          "start" : 1667551077274,
+          "stop" : 1667551092362,
+          "duration" : 15088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '动画.swf'}" ]
+      }, {
+        "name" : "test_design",
+        "uid" : "4d41ea06c4ed57fe",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667550772789,
+          "stop" : 1667550802620,
+          "duration" : 29831
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_folder",
+        "uid" : "321f6883015f87ca",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667551199680,
+          "stop" : 1667551226089,
+          "duration" : 26409
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data3]",
+        "uid" : "a2a19338035c3bc0",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667551063469,
+          "stop" : 1667551077270,
+          "duration" : 13801
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '图片.jpg'}" ]
+      }, {
+        "name" : "test_rename",
+        "uid" : "7e9b059a0341167e",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667551157186,
+          "stop" : 1667551161274,
+          "duration" : 4088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_class_room",
+        "uid" : "e38608b7eff60420",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667550811885,
+          "stop" : 1667550863536,
+          "duration" : 51651
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_login",
-        "uid" : "7bce49eacc3b82ba",
-        "parentUid" : "b6307eae596cf98d02a6d362a6ffcc68",
+        "uid" : "d917e18308792a58",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667550921873,
+          "stop" : 1667550944426,
+          "duration" : 22553
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data2]",
+        "uid" : "a45165b3ca1a5fd6",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667551047746,
+          "stop" : 1667551063465,
+          "duration" : 15719
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '视频.mp4'}" ]
+      }, {
+        "name" : "test_import_resources[test_data0]",
+        "uid" : "249817e72cdd3410",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667550999998,
+          "stop" : 1667551033545,
+          "duration" : 33547
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '课件.pptx'}" ]
+      }, {
+        "name" : "test_del",
+        "uid" : "ffd31bfa1f92bcbc",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "broken",
         "time" : {
-          "start" : 1667374687115,
-          "stop" : 1667374689484,
-          "duration" : 2369
+          "start" : 1667551161277,
+          "stop" : 1667551190773,
+          "duration" : 29496
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "b6307eae596cf98d02a6d362a6ffcc68"
-    }, {
-      "name" : "10068-MainThread",
-      "children" : [ {
-        "name" : "test_login",
-        "uid" : "a58dc90871be6a",
-        "parentUid" : "63bc389034e1338ef2a7f581e334e640",
+      }, {
+        "name" : "test_demo_class",
+        "uid" : "ad4fa1b6f675459",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "passed",
         "time" : {
-          "start" : 1667375277523,
-          "stop" : 1667375307858,
-          "duration" : 30335
+          "start" : 1667550676922,
+          "stop" : 1667550763455,
+          "duration" : 86533
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "63bc389034e1338ef2a7f581e334e640"
-    }, {
-      "name" : "3768-MainThread",
-      "children" : [ {
-        "name" : "test_login",
-        "uid" : "21b300ce45b5a8cf",
-        "parentUid" : "c245e69142e49298243a71bb5e6bbaa6",
+      }, {
+        "name" : "test_edit_resources",
+        "uid" : "12768d0ed39e28e5",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "passed",
         "time" : {
-          "start" : 1667375000385,
-          "stop" : 1667375026086,
-          "duration" : 25701
+          "start" : 1667551153091,
+          "stop" : 1667551157182,
+          "duration" : 4091
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "c245e69142e49298243a71bb5e6bbaa6"
-    }, {
-      "name" : "3792-MainThread",
-      "children" : [ {
-        "name" : "test_login",
-        "uid" : "cdd9d3e55187935a",
-        "parentUid" : "8c898788aa88f90127b156a8de7e58fd",
+      }, {
+        "name" : "test_export_resources",
+        "uid" : "1a8143923650435",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667551190803,
+          "stop" : 1667551199520,
+          "duration" : 8717
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data1]",
+        "uid" : "5c4d22f733a446aa",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
         "status" : "passed",
         "time" : {
-          "start" : 1667373407482,
-          "stop" : 1667373431982,
-          "duration" : 24500
+          "start" : 1667551033578,
+          "stop" : 1667551047742,
+          "duration" : 14164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '音频.mp3'}" ]
+      }, {
+        "name" : "test_extend",
+        "uid" : "8358fdf07496c402",
+        "parentUid" : "65cade9e1b6c1d2abfd298aa1be2bd9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667550872813,
+          "stop" : 1667550919540,
+          "duration" : 46727
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8c898788aa88f90127b156a8de7e58fd"
+      "uid" : "65cade9e1b6c1d2abfd298aa1be2bd9b"
     }, {
-      "name" : "2116-MainThread",
+      "name" : "6848-MainThread",
       "children" : [ {
-        "name" : "test_login",
-        "uid" : "4c877cb37a2355b0",
-        "parentUid" : "fc934ec9a2da4c0d321c3fcbe1cd73ac",
+        "name" : "test_courseware",
+        "uid" : "cd02caab74a075a4",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
         "status" : "passed",
         "time" : {
-          "start" : 1667373889217,
-          "stop" : 1667373908090,
-          "duration" : 18873
+          "start" : 1667552441244,
+          "stop" : 1667552477769,
+          "duration" : 36525
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_extend",
+        "uid" : "6cc38e1a169975dd",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552681637,
+          "stop" : 1667552723336,
+          "duration" : 41699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_folder",
+        "uid" : "806983a849fa0b74",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667552967283,
+          "stop" : 1667552993763,
+          "duration" : 26480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_user_agreement",
+        "uid" : "def54447ae1de3ef",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667552744574,
+          "stop" : 1667552765000,
+          "duration" : 20426
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_class_room",
+        "uid" : "f8f6ea7d1972e8cc",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552619283,
+          "stop" : 1667552673597,
+          "duration" : 54314
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_export_resources",
+        "uid" : "25d53a67d90bb274",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667552958447,
+          "stop" : 1667552967145,
+          "duration" : 8698
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rename",
+        "uid" : "7129f0236a9b083a",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552952096,
+          "stop" : 1667552955221,
+          "duration" : 3125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data4]",
+        "uid" : "64e9a549e73a3bad",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552867307,
+          "stop" : 1667552882123,
+          "duration" : 14816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '动画.swf'}" ]
+      }, {
+        "name" : "test_teacher_book",
+        "uid" : "535f6d96425a6423",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667553017949,
+          "stop" : 1667553065340,
+          "duration" : 47391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data0]",
+        "uid" : "a46aeef578a957de",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552796947,
+          "stop" : 1667552825307,
+          "duration" : 28360
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '课件.pptx'}" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "72240b6b9da473a4",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552725801,
+          "stop" : 1667552744571,
+          "duration" : 18770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_demo_class",
+        "uid" : "7621debff30c54f6",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552485482,
+          "stop" : 1667552571020,
+          "duration" : 85538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_del",
+        "uid" : "4abd4610e1872139",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552955224,
+          "stop" : 1667552958444,
+          "duration" : 3220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data3]",
+        "uid" : "23ace9e8acc11ebe",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552853669,
+          "stop" : 1667552867303,
+          "duration" : 13634
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '图片.jpg'}" ]
+      }, {
+        "name" : "test_edit_resources",
+        "uid" : "498981671b35a3c9",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552941596,
+          "stop" : 1667552952093,
+          "duration" : 10497
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data1]",
+        "uid" : "f62c87e9432ec310",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552825312,
+          "stop" : 1667552839158,
+          "duration" : 13846
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '音频.mp3'}" ]
+      }, {
+        "name" : "test_privacy_policy",
+        "uid" : "b5c28b2c9bfd637",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1667552765217,
+          "stop" : 1667552786544,
+          "duration" : 21327
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_import_resources[test_data5]",
+        "uid" : "2f0b5e9d9ecd9f1e",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552882127,
+          "stop" : 1667552908006,
+          "duration" : 25879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '文件.xlsx'}" ]
+      }, {
+        "name" : "test_import_resources[test_data2]",
+        "uid" : "23bbabaec1783c32",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552839162,
+          "stop" : 1667552853665,
+          "duration" : 14503
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '视频.mp4'}" ]
+      }, {
+        "name" : "test_import_resources[test_data6]",
+        "uid" : "810eb8ffa6beeaed",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667552908010,
+          "stop" : 1667552941553,
+          "duration" : 33543
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '文档.docx'}" ]
+      }, {
+        "name" : "test_add",
+        "uid" : "8ba90aa785b6b769",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552997451,
+          "stop" : 1667553003367,
+          "duration" : 5916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_download",
+        "uid" : "f6c4d4616e8dbcd9",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552993796,
+          "stop" : 1667552997449,
+          "duration" : 3653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_design",
+        "uid" : "d871af038ea0da05",
+        "parentUid" : "e4245d7c3c5ccad0ccfb8bce55d2260e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1667552578583,
+          "stop" : 1667552611728,
+          "duration" : 33145
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "fc934ec9a2da4c0d321c3fcbe1cd73ac"
+      "uid" : "e4245d7c3c5ccad0ccfb8bce55d2260e"
     } ],
     "uid" : "8be9e56b51bb7baadea36a18342d583e"
   } ]
