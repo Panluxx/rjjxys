@@ -53,11 +53,6 @@ class TestResources(BasePage):
             self.touch(get_path('图片'),  img_doc='打开图片')
             self.assert_exists(get_path('图片资源'), img_doc='查看打开的资源')
             self.touch(get_path('关闭音频'), img_doc='关闭图片')
-            name1 = self.exists(get_path('图片'))
-            move(name1)
-            self.touch(get_path('删除'), img_doc='删除课件')
-            sleep(1)
-            self.touch(get_path('确定删除'), img_doc='确定删除')
         elif test_data['name'] == '动画.swf':
             self.touch(get_path('动画'), img_doc='打开动画')
             self.assert_exists(get_path('动画资源'), img_doc='查看打开的资源')
@@ -74,6 +69,11 @@ class TestResources(BasePage):
             sleep(2)
             self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')
             self.touch(get_path('文件关闭'), img_doc='关闭文档')
+            name1 = self.exists(get_path('文档'))
+            move(name1)
+            self.touch(get_path('删除'), img_doc='删除文档')
+            sleep(1)
+            self.touch(get_path('确定删除'), img_doc='确定删除')
         else:
             self.touch(get_path('课件'), img_doc='打开课件')
             sleep(10)
