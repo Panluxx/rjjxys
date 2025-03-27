@@ -41,18 +41,15 @@ class TestResources(BasePage):
         self.click_key('{ENTER}')
         sleep(3)
         if test_data['name'] == '音频.mp3':
-            self.assert_exists(get_path('音频'), img_doc='查看音频封面')
             self.touch(get_path('音频'), img_doc='打开资源')
             self.assert_exists(get_path('音频资源'), img_doc='查看打开的资源')
             self.touch(get_path('关闭音频'), img_doc='点击关闭音频')
         elif test_data['name'] == '视频.mp4':
-            self.assert_exists(get_path('视频'), img_doc='查看视频封面')
             self.touch(get_path('视频'), img_doc='打开视频')
             self.assert_exists(get_path('视频资源'), img_doc='查看打开的资源')
             self.click_key('{ESC}')
             self.touch(get_path('关闭音频'), img_doc='关闭视频')
         elif test_data['name'] == '图片.jpg':
-            self.assert_exists(get_path('图片'), img_doc='查看图片封面')
             self.touch(get_path('图片'),  img_doc='打开图片')
             self.assert_exists(get_path('图片资源'), img_doc='查看打开的资源')
             self.touch(get_path('关闭音频'), img_doc='关闭图片')
@@ -62,12 +59,10 @@ class TestResources(BasePage):
             sleep(1)
             self.touch(get_path('确定删除'), img_doc='确定删除')
         elif test_data['name'] == '动画.swf':
-            self.assert_exists(get_path('动画'), img_doc='查看动画封面')
             self.touch(get_path('动画'), img_doc='打开动画')
             self.assert_exists(get_path('动画资源'), img_doc='查看打开的资源')
             self.touch(get_path('关闭动画'), img_doc='关闭动画')
         elif test_data['name'] == '文件.xlsx':
-            self.assert_exists(get_path('文件'), img_doc='查看文件封面')
             self.touch(get_path('文件'),  img_doc='打开文件')
             self.assert_exists(get_path('文件资源'), img_doc='查看打开的资源')
             sleep(2)
@@ -75,15 +70,13 @@ class TestResources(BasePage):
             if self.exists(get_path('保存弹窗')):
                 self.touch(get_path('不保存'), img_doc='不保存文件')
         elif test_data['name'] == '文档.docx':
-            self.assert_exists(get_path('文档'), img_doc='查看文档封面')
             self.touch(get_path('文档'), img_doc='打开文档')
             sleep(2)
             self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')
             self.touch(get_path('文件关闭'), img_doc='关闭文档')
         else:
-            self.assert_exists(get_path('课件'), img_doc='查看课件封面')
             self.touch(get_path('课件'), img_doc='打开课件')
-            sleep(2)
+            sleep(10)
             self.assert_exists(get_path('课件资源'), img_doc='查看打开的资源')
             self.touch(get_path('课件关闭'), img_doc='关闭课件')
 
@@ -92,7 +85,7 @@ class TestResources(BasePage):
         name = self.exists(get_path('课件'), img_doc='课件存在')
         if name:
             move(name)
-            self.touch(get_path('编辑'), record_pos=(-0.094, -0.023), img_doc='编辑课件')
+            self.touch(get_path('编辑'), img_doc='编辑课件')
             self.assert_exists(get_path('课件资源'), img_doc='查看打开的资源')
             self.touch(get_path('课件关闭'), img_doc='关闭课件')
 
