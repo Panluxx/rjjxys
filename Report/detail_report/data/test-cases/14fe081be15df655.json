@@ -1,0 +1,130 @@
+{
+  "uid" : "14fe081be15df655",
+  "name" : "test_import_resources[test_data5]",
+  "fullName" : "TestCases.test_my_resources.test_resources.TestResources#test_import_resources",
+  "historyId" : "28db05808f5708abd1d239fd1a1e4964",
+  "time" : {
+    "start" : 1741245947934,
+    "stop" : 1741245947934,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "airtest.aircv.error.FileNotExistError: File not exist: E:\\Git\\rjjxys\\Picture\\resources\\我的资源.png",
+  "statusTrace" : "login = None\n\n    @pytest.fixture(scope='module')\n    def del_resources(login):\n>       BasePage().touch(get_path('我的资源'))\n\nTestCases\\test_my_resources\\test_resources.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nCommon\\basepage.py:54: in touch\n    raise e\nCommon\\basepage.py:46: in touch\n    touch(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\api.py:363: in touch\n    pos = loop_find(v, timeout=ST.FIND_TIMEOUT)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:69: in loop_find\n    match_pos = query.match_in(screen)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:154: in match_in\n    match_result = self._cv_match(screen)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:169: in _cv_match\n    ori_image = self._imread()\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:202: in _imread\n    return aircv.imread(self.filepath)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nfilename = 'E:\\\\Git\\\\rjjxys\\\\Picture\\\\resources\\\\我的资源.png', flatten = False\n\n    def imread(filename, flatten=False):\n        \"\"\"根据图片路径，将图片读取为cv2的图片处理格式.\"\"\"\n        if not os.path.isfile(filename):\n>           raise FileNotExistError(\"File not exist: %s\" % filename)\nE           airtest.aircv.error.FileNotExistError: File not exist: E:\\Git\\rjjxys\\Picture\\resources\\我的资源.png\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\aircv\\aircv.py:15: FileNotExistError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "del_resources",
+    "time" : {
+      "start" : 1741245945922,
+      "stop" : 1741245947607,
+      "duration" : 1685
+    },
+    "status" : "broken",
+    "statusMessage" : "airtest.aircv.error.FileNotExistError: File not exist: E:\\Git\\rjjxys\\Picture\\resources\\我的资源.png\n",
+    "statusTrace" : "  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\pluggy\\_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 1130, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 902, in call_fixture_func\n    fixture_result = next(generator)\n  File \"E:\\Git\\rjjxys\\TestCases\\test_my_resources\\test_resources.py\", line 29, in del_resources\n    BasePage().touch(get_path('我的资源'))\n  File \"E:\\Git\\rjjxys\\Common\\basepage.py\", line 54, in touch\n    raise e\n  File \"E:\\Git\\rjjxys\\Common\\basepage.py\", line 46, in touch\n    touch(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py\", line 124, in wrapper\n    res = f(*args, **kwargs)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\api.py\", line 363, in touch\n    pos = loop_find(v, timeout=ST.FIND_TIMEOUT)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py\", line 124, in wrapper\n    res = f(*args, **kwargs)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py\", line 69, in loop_find\n    match_pos = query.match_in(screen)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py\", line 154, in match_in\n    match_result = self._cv_match(screen)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py\", line 124, in wrapper\n    res = f(*args, **kwargs)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py\", line 169, in _cv_match\n    ori_image = self._imread()\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py\", line 202, in _imread\n    return aircv.imread(self.filepath)\n  File \"E:\\Git\\rjjxy\\venv\\lib\\site-packages\\airtest\\aircv\\aircv.py\", line 15, in imread\n    raise FileNotExistError(\"File not exist: %s\" % filename)\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "81a42174e2476908",
+      "name" : "b4f49638-a740-49b8-aa72-0b78efa5e95e-attachment.png",
+      "source" : "81a42174e2476908.png",
+      "type" : "image/png",
+      "size" : 969896
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  }, {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1741245933725,
+      "stop" : 1741245934473,
+      "duration" : 748
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1741245934473,
+      "stop" : 1741245945922,
+      "duration" : 11449
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1741245948394,
+      "stop" : 1741245950473,
+      "duration" : 2079
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('del_resources')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_my_resources"
+  }, {
+    "name" : "suite",
+    "value" : "test_resources"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestResources"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_my_resources.test_resources"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_data",
+    "value" : "{'name': '文档.docx'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('del_resources')" ]
+  },
+  "source" : "14fe081be15df655.json",
+  "parameterValues" : [ "{'name': '文档.docx'}" ]
+}

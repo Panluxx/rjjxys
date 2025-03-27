@@ -1,0 +1,121 @@
+{
+  "uid" : "e180e07f103e06c7",
+  "name" : "test_case_01",
+  "fullName" : "TestCases.test_yingw_6s.test_02_digital_classroom.TestDigitalClassroom#test_case_01",
+  "historyId" : "a999407e5cbfda1c9a7dd24316e9925a",
+  "time" : {
+    "start" : 1741913935298,
+    "stop" : 1741913952727,
+    "duration" : 17429
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1741913924997,
+      "stop" : 1741913925532,
+      "duration" : 535
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1741913925533,
+      "stop" : 1741913935297,
+      "duration" : 9764
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6b3c7e22a1d305de",
+      "name" : "log",
+      "source" : "6b3c7e22a1d305de.txt",
+      "type" : "text/plain",
+      "size" : 20901
+    }, {
+      "uid" : "7c0803b6ea463d33",
+      "name" : "stderr",
+      "source" : "7c0803b6ea463d33.txt",
+      "type" : "text/plain",
+      "size" : 20053
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1741913952728,
+      "stop" : 1741913954806,
+      "duration" : 2078
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_yingw_6s"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_digital_classroom"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDigitalClassroom"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_yingw_6s.test_02_digital_classroom"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e180e07f103e06c7.json",
+  "parameterValues" : [ ]
+}

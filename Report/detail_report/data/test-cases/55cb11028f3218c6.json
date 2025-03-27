@@ -1,0 +1,131 @@
+{
+  "uid" : "55cb11028f3218c6",
+  "name" : "test_case_08",
+  "fullName" : "TestCases.test_yingw_3s.test_02_teaching_resource.TestTeachingResource#test_case_08",
+  "historyId" : "3806a2b97b9700e6a1fd7392a562f873",
+  "time" : {
+    "start" : 1741913751811,
+    "stop" : 1741913819762,
+    "duration" : 67951
+  },
+  "status" : "broken",
+  "statusMessage" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\下载确定.png) not found in screen'",
+  "statusTrace" : "self = <TestCases.test_yingw_3s.test_02_teaching_resource.TestTeachingResource object at 0x0000025BA35A92E0>\nlogin = None\n\n    def test_case_08(self, login):\n        # 图片\n        self.touch(get_path('学科筛选框'), img_doc='点击学科筛选框')\n        self.touch(get_path('英语'), img_doc='选择英语学科')\n        self.touch(get_path('书本封面'), img_doc='点击书本封面')\n        self.touch(get_path('教学资源'), img_doc='点击教学资源')\n        self.touch(get_path('切换目录1'), img_doc='点击切换目录1')\n        self.touch(get_path('图片'), img_doc='点击图片')\n        self.touch(get_path('图片资源'), img_doc='点击图片资源')\n        self.assert_exists(get_path('图片资源内容'), img_doc='检查图片资源内容')\n        sleep(5)\n        self.touch(get_path('关闭图片'), img_doc='点击关闭图片')\n        # 下载\n        name = self.exists(get_path('图片资源'))\n        move(name)\n        self.touch(get_path('下载'), img_doc='点击下载')\n        self.touch(get_path('下载确定'), img_doc='点击确定按钮')\n        if self.exists(get_path('覆盖提示'), img_doc='覆盖提示存在'):\n            self.touch(get_path('覆盖确定'), img_doc='点击确定按钮')\n        # 收藏\n        move(name)\n        self.touch(get_path('收藏'), img_doc='点击收藏按钮')\n        self.touch(get_path('取消收藏'), img_doc='点击取消收藏按钮')\n    \n        # 批量下载--- 单个\n        self.touch(get_path('批量下载'), img_doc='点击批量下载')\n        self.touch(get_path('图片资源下载'), img_doc='选择资源下载')\n        self.touch(get_path('批量确认下载'), img_doc='点击下载')\n>       self.touch(get_path('下载确定'), img_doc='点击确定按钮')\n\nTestCases\\test_yingw_3s\\test_02_teaching_resource.py:627: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nCommon\\basepage.py:54: in touch\n    raise e\nCommon\\basepage.py:46: in touch\n    touch(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\api.py:363: in touch\n    pos = loop_find(v, timeout=ST.FIND_TIMEOUT)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nquery = Template(E:\\Git\\rjjxys\\Picture\\yingw_3s\\teaching_resource\\下载确定.png)\ntimeout = 20, threshold = None, interval = 0.5, intervalfunc = None\n\n    @logwrap\n    def loop_find(query, timeout=ST.FIND_TIMEOUT, threshold=None, interval=0.5, intervalfunc=None):\n        \"\"\"\n        Search for image template in the screen until timeout\n    \n        Args:\n            query: image template to be found in screenshot\n            timeout: time interval how long to look for the image template\n            threshold: default is None\n            interval: sleep interval before next attempt to find the image template\n            intervalfunc: function that is executed after unsuccessful attempt to find the image template\n    \n        Raises:\n            TargetNotFoundError: when image template is not found in screenshot\n    \n        Returns:\n            TargetNotFoundError if image template not found, otherwise returns the position where the image template has\n            been found in screenshot\n    \n        \"\"\"\n        G.LOGGING.info(\"Try finding: %s\", query)\n        start_time = time.time()\n        while True:\n            screen = G.DEVICE.snapshot(filename=None, quality=ST.SNAPSHOT_QUALITY)\n    \n            if screen is None:\n                G.LOGGING.warning(\"Screen is None, may be locked\")\n            else:\n                if threshold:\n                    query.threshold = threshold\n                match_pos = query.match_in(screen)\n                if match_pos:\n                    try_log_screen(screen)\n                    return match_pos\n    \n            if intervalfunc is not None:\n                intervalfunc()\n    \n            # 超时则raise，未超时则进行下次循环:\n            if (time.time() - start_time) > timeout:\n                try_log_screen(screen)\n>               raise TargetNotFoundError('Picture %s not found in screen' % query)\nE               airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\下载确定.png) not found in screen'\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:80: TargetNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1741913741234,
+      "stop" : 1741913741961,
+      "duration" : 727
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1741913741962,
+      "stop" : 1741913751809,
+      "duration" : 9847
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\下载确定.png) not found in screen'",
+    "statusTrace" : "self = <TestCases.test_yingw_3s.test_02_teaching_resource.TestTeachingResource object at 0x0000025BA35A92E0>\nlogin = None\n\n    def test_case_08(self, login):\n        # 图片\n        self.touch(get_path('学科筛选框'), img_doc='点击学科筛选框')\n        self.touch(get_path('英语'), img_doc='选择英语学科')\n        self.touch(get_path('书本封面'), img_doc='点击书本封面')\n        self.touch(get_path('教学资源'), img_doc='点击教学资源')\n        self.touch(get_path('切换目录1'), img_doc='点击切换目录1')\n        self.touch(get_path('图片'), img_doc='点击图片')\n        self.touch(get_path('图片资源'), img_doc='点击图片资源')\n        self.assert_exists(get_path('图片资源内容'), img_doc='检查图片资源内容')\n        sleep(5)\n        self.touch(get_path('关闭图片'), img_doc='点击关闭图片')\n        # 下载\n        name = self.exists(get_path('图片资源'))\n        move(name)\n        self.touch(get_path('下载'), img_doc='点击下载')\n        self.touch(get_path('下载确定'), img_doc='点击确定按钮')\n        if self.exists(get_path('覆盖提示'), img_doc='覆盖提示存在'):\n            self.touch(get_path('覆盖确定'), img_doc='点击确定按钮')\n        # 收藏\n        move(name)\n        self.touch(get_path('收藏'), img_doc='点击收藏按钮')\n        self.touch(get_path('取消收藏'), img_doc='点击取消收藏按钮')\n    \n        # 批量下载--- 单个\n        self.touch(get_path('批量下载'), img_doc='点击批量下载')\n        self.touch(get_path('图片资源下载'), img_doc='选择资源下载')\n        self.touch(get_path('批量确认下载'), img_doc='点击下载')\n>       self.touch(get_path('下载确定'), img_doc='点击确定按钮')\n\nTestCases\\test_yingw_3s\\test_02_teaching_resource.py:627: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nCommon\\basepage.py:54: in touch\n    raise e\nCommon\\basepage.py:46: in touch\n    touch(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\api.py:363: in touch\n    pos = loop_find(v, timeout=ST.FIND_TIMEOUT)\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nquery = Template(E:\\Git\\rjjxys\\Picture\\yingw_3s\\teaching_resource\\下载确定.png)\ntimeout = 20, threshold = None, interval = 0.5, intervalfunc = None\n\n    @logwrap\n    def loop_find(query, timeout=ST.FIND_TIMEOUT, threshold=None, interval=0.5, intervalfunc=None):\n        \"\"\"\n        Search for image template in the screen until timeout\n    \n        Args:\n            query: image template to be found in screenshot\n            timeout: time interval how long to look for the image template\n            threshold: default is None\n            interval: sleep interval before next attempt to find the image template\n            intervalfunc: function that is executed after unsuccessful attempt to find the image template\n    \n        Raises:\n            TargetNotFoundError: when image template is not found in screenshot\n    \n        Returns:\n            TargetNotFoundError if image template not found, otherwise returns the position where the image template has\n            been found in screenshot\n    \n        \"\"\"\n        G.LOGGING.info(\"Try finding: %s\", query)\n        start_time = time.time()\n        while True:\n            screen = G.DEVICE.snapshot(filename=None, quality=ST.SNAPSHOT_QUALITY)\n    \n            if screen is None:\n                G.LOGGING.warning(\"Screen is None, may be locked\")\n            else:\n                if threshold:\n                    query.threshold = threshold\n                match_pos = query.match_in(screen)\n                if match_pos:\n                    try_log_screen(screen)\n                    return match_pos\n    \n            if intervalfunc is not None:\n                intervalfunc()\n    \n            # 超时则raise，未超时则进行下次循环:\n            if (time.time() - start_time) > timeout:\n                try_log_screen(screen)\n>               raise TargetNotFoundError('Picture %s not found in screen' % query)\nE               airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\下载确定.png) not found in screen'\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:80: TargetNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b09dc4bf3825be9b",
+      "name" : "点击确定按钮",
+      "source" : "b09dc4bf3825be9b.png",
+      "type" : "image/png",
+      "size" : 565494
+    }, {
+      "uid" : "2e2d3411222a3327",
+      "name" : "log",
+      "source" : "2e2d3411222a3327.txt",
+      "type" : "text/plain",
+      "size" : 54396
+    }, {
+      "uid" : "2f526cf07947e5d8",
+      "name" : "stderr",
+      "source" : "2f526cf07947e5d8.txt",
+      "type" : "text/plain",
+      "size" : 52154
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1741913819830,
+      "stop" : 1741913821964,
+      "duration" : 2134
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_yingw_3s"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_teaching_resource"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTeachingResource"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_yingw_3s.test_02_teaching_resource"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "55cb11028f3218c6.json",
+  "parameterValues" : [ ]
+}

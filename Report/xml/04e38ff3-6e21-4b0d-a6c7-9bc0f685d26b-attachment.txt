@@ -1,0 +1,211 @@
+[16:51:17][WARNING]<airtest.core.api> Device:None updated <airtest.core.win.win.Windows object at 0x0000020880032BB0> -> <airtest.core.win.win.Windows object at 0x0000020880DC32B0>
+[16:51:17][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\login\未勾选.png)
+[16:51:17][DEBUG]<airtest.core.api> resize: (29, 25)->(29, 25), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:17][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:17][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (0, 0), 'rectangle': ((0, 0), (0, 0), (0, 0), (0, 0)), 'confidence': 0}
+[16:51:17][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.05 s.
+[16:51:17][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:18][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (1973, 465), 'rectangle': ((1959, 453), (1959, 478), (1988, 478), (1988, 453)), 'confidence': 0.4495149552822113}
+[16:51:18][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:18][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:19][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[16:51:19][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:19][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[16:51:19][DEBUG]<airtest.core.api> match result: None
+[16:51:20][DEBUG]<airtest.core.api> resize: (29, 25)->(29, 25), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:20][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:20][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (0, 0), 'rectangle': ((0, 0), (0, 0), (0, 0), (0, 0)), 'confidence': 0}
+[16:51:20][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.04 s.
+[16:51:20][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:20][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (1973, 465), 'rectangle': ((1959, 453), (1959, 478), (1988, 478), (1988, 453)), 'confidence': 0.4495149552822113}
+[16:51:20][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.18 s.
+[16:51:20][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:21][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[16:51:21][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:22][DEBUG]<airtest.core.api> 'Not enough feature points in input images !'
+[16:51:22][DEBUG]<airtest.core.api> match result: None
+[16:51:22][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\login\登录.png)
+[16:51:22][DEBUG]<airtest.core.api> resize: (92, 48)->(92, 48), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:22][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:22][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1869, 122), 'rectangle': ((1819, 96), (1819, 148), (1919, 148), (1919, 96)), 'confidence': 0.4912072718143463}
+[16:51:22][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.10 s.
+[16:51:22][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:22][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (965, 740), 'rectangle': ((919, 716), (919, 764), (1011, 764), (1011, 716)), 'confidence': 1.0}
+[16:51:22][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.20 s.
+[16:51:22][DEBUG]<airtest.core.api> match result: {'result': (965, 740), 'rectangle': ((919, 716), (919, 764), (1011, 764), (1011, 716)), 'confidence': 1.0, 'time': 0.20093679428100586}
+[16:51:24][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\login\以后再说.png)
+[16:51:24][DEBUG]<airtest.core.api> resize: (112, 36)->(112, 36), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:24][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:24][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (678, 510), 'rectangle': ((590, 484), (590, 536), (767, 536), (767, 484)), 'confidence': 0.6087770462036133}
+[16:51:24][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.06 s.
+[16:51:24][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:24][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (1054, 511), 'rectangle': ((998, 493), (998, 529), (1110, 529), (1110, 493)), 'confidence': 0.6094499826431274}
+[16:51:24][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:24][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:25][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.19 s.
+[16:51:25][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:26][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.74 s.
+[16:51:26][DEBUG]<airtest.core.api> match result: None
+[16:51:27][DEBUG]<airtest.core.api> resize: (112, 36)->(112, 36), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:27][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:27][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (3678, 150), 'rectangle': ((3590, 124), (3590, 176), (3767, 176), (3767, 124)), 'confidence': 0.550961971282959}
+[16:51:27][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.07 s.
+[16:51:27][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:27][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (504, 1025), 'rectangle': ((448, 1007), (448, 1043), (560, 1043), (560, 1007)), 'confidence': 0.5242617726325989}
+[16:51:27][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:27][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:28][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.16 s.
+[16:51:28][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:29][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.74 s.
+[16:51:29][DEBUG]<airtest.core.api> match result: None
+[16:51:29][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\我的资源.png)
+[16:51:29][DEBUG]<airtest.core.api> resize: (146, 47)->(146, 47), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:29][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:29][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (696, 98), 'rectangle': ((600, 67), (600, 129), (792, 129), (792, 67)), 'confidence': 0.319546103477478}
+[16:51:29][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.09 s.
+[16:51:29][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:29][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (539, 99), 'rectangle': ((466, 76), (466, 123), (612, 123), (612, 76)), 'confidence': 0.999996542930603}
+[16:51:29][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:29][DEBUG]<airtest.core.api> match result: {'result': (539, 99), 'rectangle': ((466, 76), (466, 123), (612, 123), (612, 76)), 'confidence': 0.999996542930603, 'time': 0.20693254470825195}
+[16:51:31][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\导入.png)
+[16:51:31][DEBUG]<airtest.core.api> resize: (135, 51)->(135, 51), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:31][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:31][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (539, 102), 'rectangle': ((465, 76), (465, 128), (613, 128), (613, 76)), 'confidence': 0.8036748170852661}
+[16:51:31][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.11 s.
+[16:51:31][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:31][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (1407, 153), 'rectangle': ((1340, 128), (1340, 179), (1475, 179), (1475, 128)), 'confidence': 0.9999997019767761}
+[16:51:31][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.20 s.
+[16:51:31][DEBUG]<airtest.core.api> match result: {'result': (1407, 153), 'rectangle': ((1340, 128), (1340, 179), (1475, 179), (1475, 128)), 'confidence': 0.9999997019767761, 'time': 0.19993162155151367}
+[16:51:33][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\路径存在.png)
+[16:51:33][DEBUG]<airtest.core.api> resize: (96, 24)->(96, 24), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:33][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:33][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (0, 0), 'rectangle': ((0, 0), (0, 0), (0, 0), (0, 0)), 'confidence': 0}
+[16:51:33][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.05 s.
+[16:51:33][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:33][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (332, 370), 'rectangle': ((284, 358), (284, 382), (380, 382), (380, 358)), 'confidence': 0.9696546792984009}
+[16:51:33][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.20 s.
+[16:51:33][DEBUG]<airtest.core.api> match result: {'result': (332, 370), 'rectangle': ((284, 358), (284, 382), (380, 382), (380, 358)), 'confidence': 0.9696546792984009, 'time': 0.19693541526794434}
+[16:51:34][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\输入文件名.png)
+[16:51:34][DEBUG]<airtest.core.api> resize: (187, 40)->(187, 40), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:34][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:34][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (393, 556), 'rectangle': ((254, 528), (254, 585), (532, 585), (532, 528)), 'confidence': 0.15741045773029327}
+[16:51:34][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.09 s.
+[16:51:34][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:35][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (326, 527), 'rectangle': ((233, 507), (233, 547), (420, 547), (420, 507)), 'confidence': 0.9603338837623596}
+[16:51:35][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.20 s.
+[16:51:35][DEBUG]<airtest.core.api> match result: {'result': (326, 527), 'rectangle': ((233, 507), (233, 547), (420, 547), (420, 507)), 'confidence': 0.9603338837623596, 'time': 0.20293474197387695}
+[16:51:40][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\课件.png)
+[16:51:40][DEBUG]<airtest.core.api> resize: (540, 349)->(540, 349), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:40][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:40][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (541, 757), 'rectangle': ((273, 585), (273, 930), (810, 930), (810, 585)), 'confidence': 0.9358777403831482}
+[16:51:40][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.51 s.
+[16:51:40][DEBUG]<airtest.core.api> match result: {'result': (541, 757), 'rectangle': ((273, 585), (273, 930), (810, 930), (810, 585)), 'confidence': 0.9358777403831482, 'time': 0.5068354606628418}
+[16:51:40][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\课件.png)
+[16:51:40][DEBUG]<airtest.core.api> resize: (540, 349)->(540, 349), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:40][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:41][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.95, result={'result': (541, 757), 'rectangle': ((273, 585), (273, 930), (810, 930), (810, 585)), 'confidence': 0.9358777403831482}
+[16:51:41][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.50 s.
+[16:51:41][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:41][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.95, result={'result': (543, 758), 'rectangle': ((273, 584), (273, 933), (813, 933), (813, 584)), 'confidence': 0.892013669013977}
+[16:51:41][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.27 s.
+[16:51:41][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:42][DEBUG]<airtest.aircv.keypoint_base> [SIFT] threshold=0.95, result={'result': (540, 754), 'rectangle': [(270, 580), (270, 928), (810, 928), (810, 580)], 'confidence': 0.9581828713417053}
+[16:51:42][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.14 s.
+[16:51:42][DEBUG]<airtest.core.api> match result: {'result': (540, 754), 'rectangle': [(270, 580), (270, 928), (810, 928), (810, 580)], 'confidence': 0.9581828713417053, 'time': 1.1386287212371826}
+[16:51:46][INFO]<airtest.core.api> Try finding: Template(E:\Git\rjjxys\Picture\my_resources\resources\课件资源.png)
+[16:51:46][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:46][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:46][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:51:46][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:51:46][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:47][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:51:47][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:47][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:48][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.11 s.
+[16:51:48][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:48][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.61 s.
+[16:51:48][DEBUG]<airtest.core.api> match result: None
+[16:51:49][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:49][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:49][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:51:49][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:51:49][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:49][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:51:49][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:49][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:51][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.11 s.
+[16:51:51][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:51][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.62 s.
+[16:51:51][DEBUG]<airtest.core.api> match result: None
+[16:51:52][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:52][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:52][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:51:52][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:51:52][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:52][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:51:52][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:52][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:53][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.09 s.
+[16:51:53][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:54][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.62 s.
+[16:51:54][DEBUG]<airtest.core.api> match result: None
+[16:51:55][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:55][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:55][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:51:55][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:51:55][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:55][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:51:55][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:55][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:56][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.09 s.
+[16:51:56][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:51:57][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.62 s.
+[16:51:57][DEBUG]<airtest.core.api> match result: None
+[16:51:58][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:51:58][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:51:58][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:51:58][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:51:58][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:51:58][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:51:58][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:51:58][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:51:59][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.09 s.
+[16:51:59][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:52:00][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.62 s.
+[16:52:00][DEBUG]<airtest.core.api> match result: None
+[16:52:00][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:52:00][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:52:01][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:52:01][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:52:01][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:52:01][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:52:01][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:52:01][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:52:02][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.08 s.
+[16:52:02][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:52:03][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.63 s.
+[16:52:03][DEBUG]<airtest.core.api> match result: None
+[16:52:03][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:52:03][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:52:04][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:52:04][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:52:04][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:52:04][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:52:04][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:52:04][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:52:05][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.09 s.
+[16:52:05][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:52:06][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.65 s.
+[16:52:06][DEBUG]<airtest.core.api> match result: None
+[16:52:06][DEBUG]<airtest.core.api> resize: (869, 49)->(869, 49), resolution: (1920, 1080)=>(3840, 1080)
+[16:52:06][DEBUG]<airtest.core.api> try match with MultiScaleTemplateMatchingPre
+[16:52:07][DEBUG]<airtest.aircv.multiscale_template_matching> [MSTemplatePre] threshold=0.9, result={'result': (1015, 69), 'rectangle': ((187, 24), (187, 115), (1843, 115), (1843, 24)), 'confidence': 0.22900082170963287}
+[16:52:07][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.36 s.
+[16:52:07][DEBUG]<airtest.core.api> try match with TemplateMatching
+[16:52:07][DEBUG]<airtest.aircv.template_matching> [Template] threshold=0.9, result={'result': (616, 29), 'rectangle': ((182, 5), (182, 54), (1051, 54), (1051, 5)), 'confidence': 0.5760197043418884}
+[16:52:07][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.21 s.
+[16:52:07][DEBUG]<airtest.core.api> try match with SIFTMatching
+[16:52:08][DEBUG]<airtest.aircv.utils> find_best_result() run time is 1.09 s.
+[16:52:08][DEBUG]<airtest.core.api> try match with BRISKMatching
+[16:52:08][DEBUG]<airtest.aircv.utils> find_best_result() run time is 0.62 s.
+[16:52:08][DEBUG]<airtest.core.api> match result: None

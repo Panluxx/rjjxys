@@ -1,15 +1,92 @@
 {
-  "total" : 1,
+  "total" : 10,
   "items" : [ {
-    "uid" : "0408d924bc3d43de55080f45620fd22e",
-    "name" : "TestCases",
+    "uid" : "ecd35cbcb657c97c7ef2456650485b53",
+    "name" : "TestCases.test_my_resources",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 3,
+      "failed" : 7,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 18,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 23
+      "total" : 15
+    }
+  }, {
+    "uid" : "b7bdca8483420830a3011280e40cd627",
+    "name" : "TestCases.test_yingw_3s",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "8ba3742a322e9cdc15694da112cedbe1",
+    "name" : "TestCases.test_lis_7s",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "de364880252aeebcb4fecc3d78a1a64e",
+    "name" : "TestCases.test_wul_8s",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "f7abdbd8efec66468810733879bae7b4",
+    "name" : "TestCases.test_yingw_6s",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "8a22eafe7725c0a18e0d24ada5c8b905",
+    "name" : "TestCases.test_login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "f4589ba1e2f5e85b4c339a6f84af70cb",
+    "name" : "TestCases.test_tiy_34q",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "2b4b0f755abf51d54babc84dd4d4a07a",
+    "name" : "TestCases.test_yiny_7s",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

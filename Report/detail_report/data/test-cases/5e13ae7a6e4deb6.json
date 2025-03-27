@@ -1,0 +1,144 @@
+{
+  "uid" : "5e13ae7a6e4deb6",
+  "name" : "test_export_resources",
+  "fullName" : "TestCases.test_my_resources.test_resources.TestResources#test_export_resources",
+  "historyId" : "ceac1c08302c3ec4d55c9ae2eb67ba27",
+  "time" : {
+    "start" : 1742288310465,
+    "stop" : 1742288330756,
+    "duration" : 20291
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1742288298003,
+      "stop" : 1742288298756,
+      "duration" : 753
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1742288298756,
+      "stop" : 1742288310465,
+      "duration" : 11709
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "73f8cb62b209776e",
+      "name" : "log",
+      "source" : "73f8cb62b209776e.txt",
+      "type" : "text/plain",
+      "size" : 18344
+    }, {
+      "uid" : "52767eb49ff9e25a",
+      "name" : "stderr",
+      "source" : "52767eb49ff9e25a.txt",
+      "type" : "text/plain",
+      "size" : 17668
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1742288330775,
+      "stop" : 1742288332948,
+      "duration" : 2173
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_my_resources"
+  }, {
+    "name" : "suite",
+    "value" : "test_resources"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestResources"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "3572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_my_resources.test_resources"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3f81bc29a8fa55dc",
+      "status" : "failed",
+      "statusDetails" : "Failed: ScopeMismatch: You tried to access the function scoped fixture login with a module scoped request object, involved factories:\nTestCases\\test_my_resources\\test_resources.py:27:  def del_resources(login)\nTestCases\\conftest.py:43:  def login(open_client)",
+      "time" : {
+        "start" : 1741912521767,
+        "stop" : 1741912521767,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2a1757f020a4b1b9",
+      "status" : "broken",
+      "statusDetails" : "airtest.aircv.error.FileNotExistError: File not exist: E:\\Git\\rjjxys\\Picture\\resources\\我的资源.png",
+      "time" : {
+        "start" : 1741245948124,
+        "stop" : 1741245948124,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login')" ]
+  },
+  "source" : "5e13ae7a6e4deb6.json",
+  "parameterValues" : [ ]
+}

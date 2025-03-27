@@ -1,0 +1,142 @@
+{
+  "uid" : "355d1cbf24eb811e",
+  "name" : "test_case_01",
+  "fullName" : "TestCases.test_lis_7s.test_03_courseware.TestCourseware#test_case_01",
+  "historyId" : "bd23245a8be7da866013bdc5aa8545a5",
+  "time" : {
+    "start" : 1742287578149,
+    "stop" : 1742287656429,
+    "duration" : 78280
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1742287565889,
+      "stop" : 1742287566723,
+      "duration" : 834
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1742287566723,
+      "stop" : 1742287578149,
+      "duration" : 11426
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8df4a82cc888b84e",
+      "name" : "log",
+      "source" : "8df4a82cc888b84e.txt",
+      "type" : "text/plain",
+      "size" : 45150
+    }, {
+      "uid" : "e5240ed7dd7bdbd3",
+      "name" : "stderr",
+      "source" : "e5240ed7dd7bdbd3.txt",
+      "type" : "text/plain",
+      "size" : 43478
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1742287656448,
+      "stop" : 1742287658654,
+      "duration" : 2206
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "courseware"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_lis_7s"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_courseware"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCourseware"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "3572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_lis_7s.test_03_courseware"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8f0d4571a08f66ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741912290846,
+        "stop" : 1741912361739,
+        "duration" : 70893
+      }
+    }, {
+      "uid" : "8aad3b1aa64acf8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741245670583,
+        "stop" : 1741245744859,
+        "duration" : 74276
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "courseware" ]
+  },
+  "source" : "355d1cbf24eb811e.json",
+  "parameterValues" : [ ]
+}

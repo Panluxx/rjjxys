@@ -1,0 +1,161 @@
+{
+  "uid" : "b1ef78d504acd311",
+  "name" : "test_import_resources[test_data6]",
+  "fullName" : "TestCases.test_my_resources.test_resources.TestResources#test_import_resources",
+  "historyId" : "28db05808f5708abd1d239fd1a1e4964",
+  "time" : {
+    "start" : 1742288203856,
+    "stop" : 1742288243612,
+    "duration" : 39756
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png) does not exist in screen, message:",
+  "statusTrace" : "v = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), msg = ''\n\n    @logwrap\n    def assert_exists(v, msg=\"\"):\n        \"\"\"\n        Assert target exists on device screen\n    \n        :param v: target to be checked\n        :param msg: short description of assertion, it will be recorded in the report\n        :raise AssertionError: if assertion fails\n        :return: coordinates of the target\n        :platforms: Android, Windows, iOS\n        :Example:\n    \n            >>> assert_exists(Template(r\"tpl1607324047907.png\"), \"assert exists\")\n    \n        \"\"\"\n        try:\n>           pos = loop_find(v, timeout=ST.FIND_TIMEOUT, threshold=ST.THRESHOLD_STRICT or v.threshold)\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\assertions.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nargs = (Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png),)\nkwargs = {'threshold': 0.9, 'timeout': 20}\ntry_log_screen = <function try_log_screen at 0x00000208F44EF1F0>, depth = None\nstart = 1742288219.3980176\nm = {'interval': 0.5, 'intervalfunc': None, 'query': Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), 'threshold': 0.9, ...}\nsnapshot = False\nfndata = {'call_args': {'interval': 0.5, 'intervalfunc': None, 'query': Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文...g), 'threshold': 0.9, ...}, 'end_time': 1742288242.2501855, 'name': 'loop_find', 'start_time': 1742288219.3980176, ...}\ndata = {'end_time': 1742288242.2501855, 'traceback': 'Traceback (most recent call last):\\n  File \"E:\\\\Git\\\\rjjxy\\\\venv\\\\lib\\\\...: \\'Picture Template(E:\\\\\\\\Git\\\\\\\\rjjxys\\\\\\\\Picture\\\\\\\\my_resources\\\\\\\\resources\\\\\\\\文档资源.png) not found in screen\\'\\n'}\n\n    @functools.wraps(f)\n    def wrapper(*args, **kwargs):\n        \"\"\"\n        The decorator @logwrap can record the function call information in the airtest log and display it in the report.\n        装饰器@logwrap，能够在airtest的log中记录函数的调用信息，显示在报告中\n    \n        The following parameters can be appended to the function parameter definition for additional effect:\n        在函数参数定义中可以附加以下参数，以获得更多效果：\n    \n        snapshot: snapshot: If True, a snapshot can be attached to the report. 如果为True，可以附加一张截图到报告中\n        depth: the depth order of the current log in the log. 指定log中当前log的深度顺序\n    \n        Examples:\n    \n            @logwrap\n            def func1():\n                pass\n    \n            @logwrap\n            def func1(snapshot=True):\n                pass\n    \n        Args:\n            *args:\n            **kwargs:\n    \n        Returns:\n    \n    \n        \"\"\"\n        from airtest.core.cv import try_log_screen\n        # py3 only: def wrapper(*args, depth=None, **kwargs):\n        depth = kwargs.pop('depth', None)  # For compatibility with py2\n        start = time.time()\n        m = inspect.getcallargs(f, *args, **kwargs)\n        # The snapshot parameter is popped from the function parameter,\n        # so the function cannot use the parameter name snapshot later\n        snapshot = m.pop('snapshot', False)\n        fndata = {'name': f.__name__, 'call_args': m, 'start_time': start}\n        logger.running_stack.append(fndata)\n        try:\n>           res = f(*args, **kwargs)\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nquery = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png)\ntimeout = 20, threshold = 0.9, interval = 0.5, intervalfunc = None\n\n    @logwrap\n    def loop_find(query, timeout=ST.FIND_TIMEOUT, threshold=None, interval=0.5, intervalfunc=None):\n        \"\"\"\n        Search for image template in the screen until timeout\n    \n        Args:\n            query: image template to be found in screenshot\n            timeout: time interval how long to look for the image template\n            threshold: default is None\n            interval: sleep interval before next attempt to find the image template\n            intervalfunc: function that is executed after unsuccessful attempt to find the image template\n    \n        Raises:\n            TargetNotFoundError: when image template is not found in screenshot\n    \n        Returns:\n            TargetNotFoundError if image template not found, otherwise returns the position where the image template has\n            been found in screenshot\n    \n        \"\"\"\n        G.LOGGING.info(\"Try finding: %s\", query)\n        start_time = time.time()\n        while True:\n            screen = G.DEVICE.snapshot(filename=None, quality=ST.SNAPSHOT_QUALITY)\n    \n            if screen is None:\n                G.LOGGING.warning(\"Screen is None, may be locked\")\n            else:\n                if threshold:\n                    query.threshold = threshold\n                match_pos = query.match_in(screen)\n                if match_pos:\n                    try_log_screen(screen)\n                    return match_pos\n    \n            if intervalfunc is not None:\n                intervalfunc()\n    \n            # 超时则raise，未超时则进行下次循环:\n            if (time.time() - start_time) > timeout:\n                try_log_screen(screen)\n>               raise TargetNotFoundError('Picture %s not found in screen' % query)\nE               airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\my_resources\\\\resources\\\\文档资源.png) not found in screen'\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:80: TargetNotFoundError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <TestCases.test_my_resources.test_resources.TestResources object at 0x00000208F5912BE0>\nlogin = None, test_data = {'name': '文档.docx'}\n\n    @pytest.mark.parametrize(\"test_data\", resource_name)\n    def test_import_resources(self, login, test_data):\n        self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')\n        self.touch(get_path('导入'), img_doc='点击导入按钮')\n        if self.exists(get_path('路径存在')):\n            pass\n        else:\n            self.touch(get_path('下拉框'), img_doc='点击下拉框')\n            # 文件路径\n            self.text(p_path.resources_path, img_doc=f'输入文件路径')\n            self.click_key('{ENTER}')\n        sleep(1)\n        self.touch(get_path('输入文件名'), img_doc='点击输入文件名')\n        self.text(test_data['name'], img_doc=f'输入文件名{test_data[\"name\"]}')\n        self.click_key('{ENTER}')\n        sleep(3)\n        if test_data['name'] == '音频.mp3':\n            self.assert_exists(get_path('音频'), img_doc='查看音频封面')\n            self.touch(get_path('音频'), img_doc='打开资源')\n            self.assert_exists(get_path('音频资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭音频'), img_doc='点击关闭音频')\n        elif test_data['name'] == '视频.mp4':\n            self.assert_exists(get_path('视频'), img_doc='查看视频封面')\n            self.touch(get_path('视频'), img_doc='打开视频')\n            self.assert_exists(get_path('视频资源'), img_doc='查看打开的资源')\n            self.click_key('{ESC}')\n            self.touch(get_path('关闭音频'), img_doc='关闭视频')\n        elif test_data['name'] == '图片.jpg':\n            self.assert_exists(get_path('图片'), img_doc='查看图片封面')\n            self.touch(get_path('图片'), threshold=0.95, img_doc='打开图片')\n            self.assert_exists(get_path('图片资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭音频'), img_doc='关闭图片')\n        elif test_data['name'] == '动画.swf':\n            self.assert_exists(get_path('动画'), img_doc='查看动画封面')\n            self.touch(get_path('动画'), img_doc='打开动画')\n            self.assert_exists(get_path('动画资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭动画'), img_doc='关闭动画')\n        elif test_data['name'] == '文件.xlsx':\n            self.assert_exists(get_path('文件'), img_doc='查看文件封面')\n            self.touch(get_path('文件'), threshold=0.95, img_doc='打开文件')\n            self.assert_exists(get_path('文件资源'), img_doc='查看打开的资源')\n            sleep(2)\n            self.touch(get_path('文件关闭'), img_doc='关闭文件')\n            if self.exists(get_path('保存弹窗')):\n                self.touch(get_path('不保存'), img_doc='不保存文件')\n        elif test_data['name'] == '文档.docx':\n            self.assert_exists(get_path('文档'), img_doc='查看文档封面')\n            self.touch(get_path('文档'), threshold=0.95, img_doc='打开文档')\n            sleep(2)\n>           self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')\n\nTestCases\\test_my_resources\\test_resources.py:76: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nCommon\\basepage.py:84: in assert_exists\n    raise e\nCommon\\basepage.py:76: in assert_exists\n    assert_exists(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nv = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), msg = ''\n\n    @logwrap\n    def assert_exists(v, msg=\"\"):\n        \"\"\"\n        Assert target exists on device screen\n    \n        :param v: target to be checked\n        :param msg: short description of assertion, it will be recorded in the report\n        :raise AssertionError: if assertion fails\n        :return: coordinates of the target\n        :platforms: Android, Windows, iOS\n        :Example:\n    \n            >>> assert_exists(Template(r\"tpl1607324047907.png\"), \"assert exists\")\n    \n        \"\"\"\n        try:\n            pos = loop_find(v, timeout=ST.FIND_TIMEOUT, threshold=ST.THRESHOLD_STRICT or v.threshold)\n            return pos\n        except TargetNotFoundError:\n>           raise AssertionError(\"%s does not exist in screen, message: %s\" % (v, msg))\nE           AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png) does not exist in screen, message:\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\assertions.py:30: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1742288192136,
+      "stop" : 1742288203855,
+      "duration" : 11719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1742288191412,
+      "stop" : 1742288192135,
+      "duration" : 723
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png) does not exist in screen, message:",
+    "statusTrace" : "v = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), msg = ''\n\n    @logwrap\n    def assert_exists(v, msg=\"\"):\n        \"\"\"\n        Assert target exists on device screen\n    \n        :param v: target to be checked\n        :param msg: short description of assertion, it will be recorded in the report\n        :raise AssertionError: if assertion fails\n        :return: coordinates of the target\n        :platforms: Android, Windows, iOS\n        :Example:\n    \n            >>> assert_exists(Template(r\"tpl1607324047907.png\"), \"assert exists\")\n    \n        \"\"\"\n        try:\n>           pos = loop_find(v, timeout=ST.FIND_TIMEOUT, threshold=ST.THRESHOLD_STRICT or v.threshold)\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\assertions.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nargs = (Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png),)\nkwargs = {'threshold': 0.9, 'timeout': 20}\ntry_log_screen = <function try_log_screen at 0x00000208F44EF1F0>, depth = None\nstart = 1742288219.3980176\nm = {'interval': 0.5, 'intervalfunc': None, 'query': Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), 'threshold': 0.9, ...}\nsnapshot = False\nfndata = {'call_args': {'interval': 0.5, 'intervalfunc': None, 'query': Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文...g), 'threshold': 0.9, ...}, 'end_time': 1742288242.2501855, 'name': 'loop_find', 'start_time': 1742288219.3980176, ...}\ndata = {'end_time': 1742288242.2501855, 'traceback': 'Traceback (most recent call last):\\n  File \"E:\\\\Git\\\\rjjxy\\\\venv\\\\lib\\\\...: \\'Picture Template(E:\\\\\\\\Git\\\\\\\\rjjxys\\\\\\\\Picture\\\\\\\\my_resources\\\\\\\\resources\\\\\\\\文档资源.png) not found in screen\\'\\n'}\n\n    @functools.wraps(f)\n    def wrapper(*args, **kwargs):\n        \"\"\"\n        The decorator @logwrap can record the function call information in the airtest log and display it in the report.\n        装饰器@logwrap，能够在airtest的log中记录函数的调用信息，显示在报告中\n    \n        The following parameters can be appended to the function parameter definition for additional effect:\n        在函数参数定义中可以附加以下参数，以获得更多效果：\n    \n        snapshot: snapshot: If True, a snapshot can be attached to the report. 如果为True，可以附加一张截图到报告中\n        depth: the depth order of the current log in the log. 指定log中当前log的深度顺序\n    \n        Examples:\n    \n            @logwrap\n            def func1():\n                pass\n    \n            @logwrap\n            def func1(snapshot=True):\n                pass\n    \n        Args:\n            *args:\n            **kwargs:\n    \n        Returns:\n    \n    \n        \"\"\"\n        from airtest.core.cv import try_log_screen\n        # py3 only: def wrapper(*args, depth=None, **kwargs):\n        depth = kwargs.pop('depth', None)  # For compatibility with py2\n        start = time.time()\n        m = inspect.getcallargs(f, *args, **kwargs)\n        # The snapshot parameter is popped from the function parameter,\n        # so the function cannot use the parameter name snapshot later\n        snapshot = m.pop('snapshot', False)\n        fndata = {'name': f.__name__, 'call_args': m, 'start_time': start}\n        logger.running_stack.append(fndata)\n        try:\n>           res = f(*args, **kwargs)\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nquery = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png)\ntimeout = 20, threshold = 0.9, interval = 0.5, intervalfunc = None\n\n    @logwrap\n    def loop_find(query, timeout=ST.FIND_TIMEOUT, threshold=None, interval=0.5, intervalfunc=None):\n        \"\"\"\n        Search for image template in the screen until timeout\n    \n        Args:\n            query: image template to be found in screenshot\n            timeout: time interval how long to look for the image template\n            threshold: default is None\n            interval: sleep interval before next attempt to find the image template\n            intervalfunc: function that is executed after unsuccessful attempt to find the image template\n    \n        Raises:\n            TargetNotFoundError: when image template is not found in screenshot\n    \n        Returns:\n            TargetNotFoundError if image template not found, otherwise returns the position where the image template has\n            been found in screenshot\n    \n        \"\"\"\n        G.LOGGING.info(\"Try finding: %s\", query)\n        start_time = time.time()\n        while True:\n            screen = G.DEVICE.snapshot(filename=None, quality=ST.SNAPSHOT_QUALITY)\n    \n            if screen is None:\n                G.LOGGING.warning(\"Screen is None, may be locked\")\n            else:\n                if threshold:\n                    query.threshold = threshold\n                match_pos = query.match_in(screen)\n                if match_pos:\n                    try_log_screen(screen)\n                    return match_pos\n    \n            if intervalfunc is not None:\n                intervalfunc()\n    \n            # 超时则raise，未超时则进行下次循环:\n            if (time.time() - start_time) > timeout:\n                try_log_screen(screen)\n>               raise TargetNotFoundError('Picture %s not found in screen' % query)\nE               airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\my_resources\\\\resources\\\\文档资源.png) not found in screen'\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\cv.py:80: TargetNotFoundError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <TestCases.test_my_resources.test_resources.TestResources object at 0x00000208F5912BE0>\nlogin = None, test_data = {'name': '文档.docx'}\n\n    @pytest.mark.parametrize(\"test_data\", resource_name)\n    def test_import_resources(self, login, test_data):\n        self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')\n        self.touch(get_path('导入'), img_doc='点击导入按钮')\n        if self.exists(get_path('路径存在')):\n            pass\n        else:\n            self.touch(get_path('下拉框'), img_doc='点击下拉框')\n            # 文件路径\n            self.text(p_path.resources_path, img_doc=f'输入文件路径')\n            self.click_key('{ENTER}')\n        sleep(1)\n        self.touch(get_path('输入文件名'), img_doc='点击输入文件名')\n        self.text(test_data['name'], img_doc=f'输入文件名{test_data[\"name\"]}')\n        self.click_key('{ENTER}')\n        sleep(3)\n        if test_data['name'] == '音频.mp3':\n            self.assert_exists(get_path('音频'), img_doc='查看音频封面')\n            self.touch(get_path('音频'), img_doc='打开资源')\n            self.assert_exists(get_path('音频资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭音频'), img_doc='点击关闭音频')\n        elif test_data['name'] == '视频.mp4':\n            self.assert_exists(get_path('视频'), img_doc='查看视频封面')\n            self.touch(get_path('视频'), img_doc='打开视频')\n            self.assert_exists(get_path('视频资源'), img_doc='查看打开的资源')\n            self.click_key('{ESC}')\n            self.touch(get_path('关闭音频'), img_doc='关闭视频')\n        elif test_data['name'] == '图片.jpg':\n            self.assert_exists(get_path('图片'), img_doc='查看图片封面')\n            self.touch(get_path('图片'), threshold=0.95, img_doc='打开图片')\n            self.assert_exists(get_path('图片资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭音频'), img_doc='关闭图片')\n        elif test_data['name'] == '动画.swf':\n            self.assert_exists(get_path('动画'), img_doc='查看动画封面')\n            self.touch(get_path('动画'), img_doc='打开动画')\n            self.assert_exists(get_path('动画资源'), img_doc='查看打开的资源')\n            self.touch(get_path('关闭动画'), img_doc='关闭动画')\n        elif test_data['name'] == '文件.xlsx':\n            self.assert_exists(get_path('文件'), img_doc='查看文件封面')\n            self.touch(get_path('文件'), threshold=0.95, img_doc='打开文件')\n            self.assert_exists(get_path('文件资源'), img_doc='查看打开的资源')\n            sleep(2)\n            self.touch(get_path('文件关闭'), img_doc='关闭文件')\n            if self.exists(get_path('保存弹窗')):\n                self.touch(get_path('不保存'), img_doc='不保存文件')\n        elif test_data['name'] == '文档.docx':\n            self.assert_exists(get_path('文档'), img_doc='查看文档封面')\n            self.touch(get_path('文档'), threshold=0.95, img_doc='打开文档')\n            sleep(2)\n>           self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')\n\nTestCases\\test_my_resources\\test_resources.py:76: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nCommon\\basepage.py:84: in assert_exists\n    raise e\nCommon\\basepage.py:76: in assert_exists\n    assert_exists(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\utils\\logwraper.py:124: in wrapper\n    res = f(*args, **kwargs)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nv = Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png), msg = ''\n\n    @logwrap\n    def assert_exists(v, msg=\"\"):\n        \"\"\"\n        Assert target exists on device screen\n    \n        :param v: target to be checked\n        :param msg: short description of assertion, it will be recorded in the report\n        :raise AssertionError: if assertion fails\n        :return: coordinates of the target\n        :platforms: Android, Windows, iOS\n        :Example:\n    \n            >>> assert_exists(Template(r\"tpl1607324047907.png\"), \"assert exists\")\n    \n        \"\"\"\n        try:\n            pos = loop_find(v, timeout=ST.FIND_TIMEOUT, threshold=ST.THRESHOLD_STRICT or v.threshold)\n            return pos\n        except TargetNotFoundError:\n>           raise AssertionError(\"%s does not exist in screen, message: %s\" % (v, msg))\nE           AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png) does not exist in screen, message:\n\n..\\rjjxy\\venv\\lib\\site-packages\\airtest\\core\\assertions.py:30: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "57e4afbfed63bcf9",
+      "name" : "查看打开的资源",
+      "source" : "57e4afbfed63bcf9.png",
+      "type" : "image/png",
+      "size" : 435443
+    }, {
+      "uid" : "86f8bb1ebcff630",
+      "name" : "log",
+      "source" : "86f8bb1ebcff630.txt",
+      "type" : "text/plain",
+      "size" : 22738
+    }, {
+      "uid" : "dd85ad783af09c6e",
+      "name" : "stderr",
+      "source" : "dd85ad783af09c6e.txt",
+      "type" : "text/plain",
+      "size" : 21894
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1742288243651,
+      "stop" : 1742288245977,
+      "duration" : 2326
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_my_resources"
+  }, {
+    "name" : "suite",
+    "value" : "test_resources"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestResources"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "3572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_my_resources.test_resources"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_data",
+    "value" : "{'name': '文档.docx'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "15d0846bad58fdaf",
+      "status" : "failed",
+      "statusDetails" : "Failed: ScopeMismatch: You tried to access the function scoped fixture login with a module scoped request object, involved factories:\nTestCases\\test_my_resources\\test_resources.py:27:  def del_resources(login)\nTestCases\\conftest.py:43:  def login(open_client)",
+      "time" : {
+        "start" : 1741912521727,
+        "stop" : 1741912521727,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "14fe081be15df655",
+      "status" : "broken",
+      "statusDetails" : "airtest.aircv.error.FileNotExistError: File not exist: E:\\Git\\rjjxys\\Picture\\resources\\我的资源.png",
+      "time" : {
+        "start" : 1741245947934,
+        "stop" : 1741245947934,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('login')" ]
+  },
+  "source" : "b1ef78d504acd311.json",
+  "parameterValues" : [ "{'name': '文档.docx'}" ]
+}

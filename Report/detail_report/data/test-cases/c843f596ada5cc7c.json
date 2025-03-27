@@ -1,0 +1,121 @@
+{
+  "uid" : "c843f596ada5cc7c",
+  "name" : "test_case_01",
+  "fullName" : "TestCases.test_yingw_6s.test_03_taping.TestTaping#test_case_01",
+  "historyId" : "c3b6c8f3f0414dfbf6dfd3b1529daa15",
+  "time" : {
+    "start" : 1741913965632,
+    "stop" : 1741914007838,
+    "duration" : 42206
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_client",
+    "time" : {
+      "start" : 1741913954826,
+      "stop" : 1741913955506,
+      "duration" : 680
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1741913955506,
+      "stop" : 1741913965631,
+      "duration" : 10125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "56891a163aba1eda",
+      "name" : "log",
+      "source" : "56891a163aba1eda.txt",
+      "type" : "text/plain",
+      "size" : 37467
+    }, {
+      "uid" : "4cf3c3d9965de628",
+      "name" : "stderr",
+      "source" : "4cf3c3d9965de628.txt",
+      "type" : "text/plain",
+      "size" : 35951
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "open_client::0",
+    "time" : {
+      "start" : 1741914007840,
+      "stop" : 1741914009915,
+      "duration" : 2075
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_yingw_6s"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_taping"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTaping"
+  }, {
+    "name" : "host",
+    "value" : "gtx650-ani"
+  }, {
+    "name" : "thread",
+    "value" : "972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_yingw_6s.test_03_taping"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c843f596ada5cc7c.json",
+  "parameterValues" : [ ]
+}

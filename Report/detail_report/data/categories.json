@@ -2,97 +2,250 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxy\\\\Picture\\\\login\\\\用户协议.png) not found in screen'",
-      "children" : [ {
-        "name" : "test_user_agreement",
-        "uid" : "def54447ae1de3ef",
-        "parentUid" : "d4780bedbe7ef0f13190d367efcfad96",
-        "status" : "broken",
-        "time" : {
-          "start" : 1667552744574,
-          "stop" : 1667552765000,
-          "duration" : 20426
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d4780bedbe7ef0f13190d367efcfad96"
-    }, {
-      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxy\\\\Picture\\\\login\\\\隐私政策.png) not found in screen'",
-      "children" : [ {
-        "name" : "test_privacy_policy",
-        "uid" : "b5c28b2c9bfd637",
-        "parentUid" : "b0bd0a7366d77f64a12fcb8063f20ec4",
-        "status" : "broken",
-        "time" : {
-          "start" : 1667552765217,
-          "stop" : 1667552786544,
-          "duration" : 21327
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "b0bd0a7366d77f64a12fcb8063f20ec4"
-    }, {
-      "name" : "OSError: [Errno 22] Invalid argument: 'E:\\\\Git\\\\rjjxy\\\\Report\\\\screenshots/输入存放路径C:\\\\Users\\\\Administrator\\\\Downloads_2022-11-04 17_09_27.png'",
-      "children" : [ {
-        "name" : "test_export_resources",
-        "uid" : "25d53a67d90bb274",
-        "parentUid" : "c9c5543e87722e7ad5be7b037b0b46a2",
-        "status" : "broken",
-        "time" : {
-          "start" : 1667552958447,
-          "stop" : 1667552967145,
-          "duration" : 8698
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "c9c5543e87722e7ad5be7b037b0b46a2"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: Template(E:\\Git\\rjjxy\\Picture\\resources\\文档资源.png) does not exist in screen, message:",
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\lis_7s\\textbook_explain\\拖动后检查.png) does not exist in screen, message:",
       "children" : [ {
-        "name" : "test_import_resources[test_data6]",
-        "uid" : "810eb8ffa6beeaed",
-        "parentUid" : "5437808fd943ff09466e27708956a99f",
+        "name" : "test_case_01",
+        "uid" : "23b1717713391b07",
+        "parentUid" : "d420532e407ecfce07ee17cec5935284",
         "status" : "failed",
         "time" : {
-          "start" : 1667552908010,
-          "stop" : 1667552941553,
-          "duration" : 33543
+          "start" : 1742287403586,
+          "stop" : 1742287481751,
+          "duration" : 78165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d420532e407ecfce07ee17cec5935284"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\课件资源.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data0]",
+        "uid" : "47860cf011433614",
+        "parentUid" : "bc816d6aa6c608939c8e5712e8107a32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742287889519,
+          "stop" : 1742287930321,
+          "duration" : 40802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '课件.pptx'}" ]
+      } ],
+      "uid" : "bc816d6aa6c608939c8e5712e8107a32"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\音频.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data1]",
+        "uid" : "78364e972c66ebc2",
+        "parentUid" : "93fe061ba2f739d35b60a40a10166b8f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742287945112,
+          "stop" : 1742287978519,
+          "duration" : 33407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '音频.mp3'}" ]
+      } ],
+      "uid" : "93fe061ba2f739d35b60a40a10166b8f"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\视频资源.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data2]",
+        "uid" : "3736cd90a1088367",
+        "parentUid" : "f63d1cbb89fdc6f1cc0bd8d683b0c663",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742287993548,
+          "stop" : 1742288029447,
+          "duration" : 35899
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '视频.mp4'}" ]
+      } ],
+      "uid" : "f63d1cbb89fdc6f1cc0bd8d683b0c663"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文件资源.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data3]",
+        "uid" : "9a8dd359537ac48a",
+        "parentUid" : "5bb2bc54573fa41b073129d067524a90",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742288044567,
+          "stop" : 1742288085342,
+          "duration" : 40775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '文件.xlsx'}" ]
+      } ],
+      "uid" : "5bb2bc54573fa41b073129d067524a90"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\图片资源.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data4]",
+        "uid" : "7f419f1d87efb5b6",
+        "parentUid" : "4a2f36c3dd4e87ce4925837d571cfe12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742288100438,
+          "stop" : 1742288141534,
+          "duration" : 41096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '图片.jpg'}" ]
+      } ],
+      "uid" : "4a2f36c3dd4e87ce4925837d571cfe12"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\动画.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data5]",
+        "uid" : "44a6dfa5f6025227",
+        "parentUid" : "30edaaa09193e490e7faef240a6a8876",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742288156042,
+          "stop" : 1742288189060,
+          "duration" : 33018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '动画.swf'}" ]
+      } ],
+      "uid" : "30edaaa09193e490e7faef240a6a8876"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\my_resources\\resources\\文档资源.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_import_resources[test_data6]",
+        "uid" : "b1ef78d504acd311",
+        "parentUid" : "746455ee90e6b43de424e0fb8ff9d732",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742288203856,
+          "stop" : 1742288243612,
+          "duration" : 39756
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'name': '文档.docx'}" ]
       } ],
-      "uid" : "5437808fd943ff09466e27708956a99f"
+      "uid" : "746455ee90e6b43de424e0fb8ff9d732"
     }, {
-      "name" : "AssertionError: Template(E:\\Git\\rjjxy\\Picture\\resources\\文件夹名称.png) does not exist in screen, message:",
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\wul_8s\\experiment\\资源内容.png) does not exist in screen, message:",
       "children" : [ {
-        "name" : "test_create_folder",
-        "uid" : "806983a849fa0b74",
-        "parentUid" : "1cbf72393352ee92784ae032aa26e07d",
+        "name" : "test_case_01",
+        "uid" : "8334922434629b9c",
+        "parentUid" : "534a39977edacc4c7d5f491c811203b8",
         "status" : "failed",
         "time" : {
-          "start" : 1667552967283,
-          "stop" : 1667552993763,
-          "duration" : 26480
+          "start" : 1742288793618,
+          "stop" : 1742288838319,
+          "duration" : 44701
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1cbf72393352ee92784ae032aa26e07d"
+      "uid" : "534a39977edacc4c7d5f491c811203b8"
+    }, {
+      "name" : "AssertionError: Template(E:\\Git\\rjjxys\\Picture\\yingw_3s\\teaching_resource\\列表动画资源内容.png) does not exist in screen, message:",
+      "children" : [ {
+        "name" : "test_case_07",
+        "uid" : "1964a76afcbccc1d",
+        "parentUid" : "93c399706c2ef5cbb952ea997d26eed9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1742289753575,
+          "stop" : 1742289856618,
+          "duration" : 103043
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "93c399706c2ef5cbb952ea997d26eed9"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\login\\\\登录.png) not found in screen'",
+      "children" : [ {
+        "name" : "test_create_folder",
+        "uid" : "e69ea62e934d5957",
+        "parentUid" : "272d8bc39f2d8b5de8ffb58281c1c713",
+        "status" : "broken",
+        "time" : {
+          "start" : 1742288332975,
+          "stop" : 1742288332975,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "272d8bc39f2d8b5de8ffb58281c1c713"
+    }, {
+      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\下载.png) not found in screen'",
+      "children" : [ {
+        "name" : "test_case_03",
+        "uid" : "90fa3d394ec57c3c",
+        "parentUid" : "cd090780e6ade7c78546b64ecb4f506c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1742289164134,
+          "stop" : 1742289257710,
+          "duration" : 93576
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd090780e6ade7c78546b64ecb4f506c"
+    }, {
+      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_3s\\\\teaching_resource\\\\暂停.png) not found in screen'",
+      "children" : [ {
+        "name" : "test_case_05",
+        "uid" : "c21eeb95a41a5001",
+        "parentUid" : "5c6483635be1852abb5aabb6e933bbc1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1742289432129,
+          "stop" : 1742289563520,
+          "duration" : 131391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c6483635be1852abb5aabb6e933bbc1"
+    }, {
+      "name" : "airtest.core.error.TargetNotFoundError: 'Picture Template(E:\\\\Git\\\\rjjxys\\\\Picture\\\\yingw_6s\\\\taping\\\\单曲循环.png) not found in screen'",
+      "children" : [ {
+        "name" : "test_case_02",
+        "uid" : "a96252c33c6c75ad",
+        "parentUid" : "8147c57cc821c661e6869519a111ef9e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1742290207580,
+          "stop" : 1742290229404,
+          "duration" : 21824
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8147c57cc821c661e6869519a111ef9e"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }

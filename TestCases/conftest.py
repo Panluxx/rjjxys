@@ -16,7 +16,7 @@ from Common.basepage import BasePage
 from Common.config import p_path
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='function')
 def open_client():
     logger.info('*' * 10 + '开始连接/启动设备' + '*' * 10)
     try:
@@ -40,11 +40,11 @@ def get_path(image):
     return os.path.join(login_path, f'{image}.png')
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='function')
 def login(open_client):
     basepage = BasePage()
-    if basepage.exists(get_path('未勾选')):
-        name = basepage.exists(get_path('账号'))
+    if basepage.exists(get_path('未勾选'), img_doc='未勾选'):
+        name = basepage.exists(get_path('账号'), img_doc='账号')
         if name:
             name = (name[0] + 80, name[1])
             double_click(name)
@@ -70,3 +70,6 @@ def login(open_client):
         sleep(2)
     # 登录
     basepage.touch(get_path('登录'), img_doc='点击登录')
+    if basepage.exists(get_path('以后再说'), img_doc='以后再说弹框存在'):
+        basepage.touch(get_path('以后再说'), img_doc='点击以后再说')
+
