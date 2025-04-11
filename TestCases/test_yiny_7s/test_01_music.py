@@ -38,7 +38,7 @@ class TestMusic(BasePage):
         self.touch(get_path('取消循环'), img_doc='点击取消循环')
         self.touch(get_path('关闭声音'), img_doc='点击关闭声音')
         self.touch(get_path('播放声音'), img_doc='点击播放声音')
-        # self.swipe(get_path('拖动'), record_pos=(-0.345, 0.141), vector=[0.3266, 0.0009], img_doc='拖动进度条')
+        self.swipe((450,950), (886,950), img_doc='拖动进度')
         self.touch(get_path('全屏'), img_doc='全屏')
         self.touch(get_path('退出全屏'), img_doc='点击退出全屏')
 

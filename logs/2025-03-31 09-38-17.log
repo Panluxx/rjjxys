@@ -1,0 +1,73 @@
+2025-03-31 09:38:17,834 rj_jxy INFO conftest.py [第21行] **********开始连接/启动设备**********
+2025-03-31 09:38:18,597 rj_jxy INFO conftest.py [第28行] **********连接/启动设备正常**********
+2025-03-31 09:38:18,598 rj_jxy INFO basepage.py [第23行] 未勾选 : 查找：E:\Git\rjjxys\Picture\login\未勾选.png 图片
+2025-03-31 09:38:23,107 rj_jxy INFO basepage.py [第36行] 未勾选页面：E:\Git\rjjxys\Picture\login\未勾选.png 图片存在
+2025-03-31 09:38:23,107 rj_jxy INFO basepage.py [第23行] 点击登录 : 查找：E:\Git\rjjxys\Picture\login\登录.png 图片
+2025-03-31 09:38:24,990 rj_jxy INFO basepage.py [第50行] 点击登录: 点击 E:\Git\rjjxys\Picture\login\登录.png 图片
+2025-03-31 09:38:24,991 rj_jxy INFO basepage.py [第23行] 以后再说弹框存在 : 查找：E:\Git\rjjxys\Picture\login\以后再说.png 图片
+2025-03-31 09:38:30,298 rj_jxy INFO basepage.py [第36行] 以后再说弹框存在页面：E:\Git\rjjxys\Picture\login\以后再说.png 图片存在
+2025-03-31 09:38:30,302 rj_jxy INFO basepage.py [第23行] 点击学科筛选框 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\学科筛选框.png 图片
+2025-03-31 09:38:32,264 rj_jxy INFO basepage.py [第50行] 点击学科筛选框: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\学科筛选框.png 图片
+2025-03-31 09:38:32,264 rj_jxy INFO basepage.py [第23行] 选择体育与健康学科 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\体育与健康.png 图片
+2025-03-31 09:38:34,118 rj_jxy INFO basepage.py [第50行] 选择体育与健康学科: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\体育与健康.png 图片
+2025-03-31 09:38:34,118 rj_jxy INFO basepage.py [第23行] 点击书本封面 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\书本封面.png 图片
+2025-03-31 09:38:36,343 rj_jxy INFO basepage.py [第50行] 点击书本封面: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\书本封面.png 图片
+2025-03-31 09:38:36,343 rj_jxy INFO basepage.py [第23行] 点击拓展资源 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\拓展资源.png 图片
+2025-03-31 09:38:45,387 rj_jxy INFO basepage.py [第50行] 点击拓展资源: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\拓展资源.png 图片
+2025-03-31 09:38:45,387 rj_jxy INFO basepage.py [第23行] 点击展开章节 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\展开章节.png 图片
+2025-03-31 09:38:49,397 rj_jxy INFO basepage.py [第50行] 点击展开章节: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\展开章节.png 图片
+2025-03-31 09:38:49,397 rj_jxy INFO basepage.py [第23行] 点击资源封面 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\资源封面.png 图片
+2025-03-31 09:38:51,330 rj_jxy INFO basepage.py [第50行] 点击资源封面: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\资源封面.png 图片
+2025-03-31 09:38:52,338 rj_jxy INFO basepage.py [第23行] 检查资源是否正常打开 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\资源内容.png 图片
+2025-03-31 09:38:52,667 rj_jxy INFO basepage.py [第86行] 对检查资源是否正常打开图片进行断言：结果为：True
+2025-03-31 09:38:57,847 rj_jxy INFO basepage.py [第105行] 使用快捷键{ESC}成功
+2025-03-31 09:38:57,847 rj_jxy INFO basepage.py [第23行] 点击暂停按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\暂停.png 图片
+2025-03-31 09:38:59,712 rj_jxy INFO basepage.py [第50行] 点击暂停按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\暂停.png 图片
+2025-03-31 09:38:59,712 rj_jxy INFO basepage.py [第23行] 点击播放按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\播放.png 图片
+2025-03-31 09:39:01,435 rj_jxy INFO basepage.py [第50行] 点击播放按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\播放.png 图片
+2025-03-31 09:39:01,436 rj_jxy INFO basepage.py [第23行] 点击关闭音量按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\关闭音量.png 图片
+2025-03-31 09:39:03,285 rj_jxy INFO basepage.py [第50行] 点击关闭音量按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\关闭音量.png 图片
+2025-03-31 09:39:03,285 rj_jxy INFO basepage.py [第23行] 点击倍速按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\倍速.png 图片
+2025-03-31 09:39:05,165 rj_jxy INFO basepage.py [第50行] 点击倍速按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\倍速.png 图片
+2025-03-31 09:39:05,166 rj_jxy INFO basepage.py [第23行] 点击2.0x按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\2.0x倍速.png 图片
+2025-03-31 09:39:07,022 rj_jxy INFO basepage.py [第50行] 点击2.0x按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\2.0x倍速.png 图片
+2025-03-31 09:39:07,023 rj_jxy INFO basepage.py [第23行] 点击恢复音量按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\恢复音量.png 图片
+2025-03-31 09:39:08,852 rj_jxy INFO basepage.py [第50行] 点击恢复音量按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\恢复音量.png 图片
+2025-03-31 09:39:08,852 rj_jxy INFO basepage.py [第23行] 点击全屏按钮 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\全屏.png 图片
+2025-03-31 09:39:10,738 rj_jxy INFO basepage.py [第50行] 点击全屏按钮: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\全屏.png 图片
+2025-03-31 09:39:10,927 rj_jxy INFO basepage.py [第105行] 使用快捷键{ESC}成功
+2025-03-31 09:39:10,927 rj_jxy INFO basepage.py [第23行] 点击关闭资源 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\关闭资源.png 图片
+2025-03-31 09:39:12,775 rj_jxy INFO basepage.py [第50行] 点击关闭资源: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\关闭资源.png 图片
+2025-03-31 09:39:12,776 rj_jxy INFO basepage.py [第23行]  : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\资源封面.png 图片
+2025-03-31 09:39:13,182 rj_jxy INFO basepage.py [第36行] 页面：E:\Git\rjjxys\Picture\tiy_34q\extend\资源封面.png 图片存在
+2025-03-31 09:39:13,301 rj_jxy INFO basepage.py [第23行] 点击下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\下载.png 图片
+2025-03-31 09:39:15,133 rj_jxy INFO basepage.py [第50行] 点击下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\下载.png 图片
+2025-03-31 09:39:15,133 rj_jxy INFO basepage.py [第23行] 确定下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:17,038 rj_jxy INFO basepage.py [第50行] 确定下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:17,038 rj_jxy INFO basepage.py [第23行]  : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\覆盖弹框.png 图片
+2025-03-31 09:39:17,391 rj_jxy INFO basepage.py [第36行] 页面：E:\Git\rjjxys\Picture\tiy_34q\extend\覆盖弹框.png 图片存在
+2025-03-31 09:39:17,391 rj_jxy INFO basepage.py [第23行] 点击取消下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\取消下载.png 图片
+2025-03-31 09:39:19,300 rj_jxy INFO basepage.py [第50行] 点击取消下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\取消下载.png 图片
+2025-03-31 09:39:20,310 rj_jxy INFO basepage.py [第23行] 点击批量下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\批量下载.png 图片
+2025-03-31 09:39:22,239 rj_jxy INFO basepage.py [第50行] 点击批量下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\批量下载.png 图片
+2025-03-31 09:39:22,239 rj_jxy INFO basepage.py [第23行] 选择单个下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\批量单个下载.png 图片
+2025-03-31 09:39:24,181 rj_jxy INFO basepage.py [第50行] 选择单个下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\批量单个下载.png 图片
+2025-03-31 09:39:24,181 rj_jxy INFO basepage.py [第23行] 点击下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\点击下载.png 图片
+2025-03-31 09:39:25,877 rj_jxy INFO basepage.py [第50行] 点击下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\点击下载.png 图片
+2025-03-31 09:39:25,877 rj_jxy INFO basepage.py [第23行] 确定下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:27,800 rj_jxy INFO basepage.py [第50行] 确定下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:28,804 rj_jxy INFO basepage.py [第23行]  : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\资源已存在.png 图片
+2025-03-31 09:39:32,765 rj_jxy INFO basepage.py [第36行] 页面：E:\Git\rjjxys\Picture\tiy_34q\extend\资源已存在.png 图片存在
+2025-03-31 09:39:34,769 rj_jxy INFO basepage.py [第23行] 点击批量下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\批量下载.png 图片
+2025-03-31 09:39:36,696 rj_jxy INFO basepage.py [第50行] 点击批量下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\批量下载.png 图片
+2025-03-31 09:39:36,696 rj_jxy INFO basepage.py [第23行] 点击全选 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\全选.png 图片
+2025-03-31 09:39:38,525 rj_jxy INFO basepage.py [第50行] 点击全选: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\全选.png 图片
+2025-03-31 09:39:38,526 rj_jxy INFO basepage.py [第23行] 点击下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\点击下载.png 图片
+2025-03-31 09:39:40,251 rj_jxy INFO basepage.py [第50行] 点击下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\点击下载.png 图片
+2025-03-31 09:39:40,251 rj_jxy INFO basepage.py [第23行] 确定下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:42,138 rj_jxy INFO basepage.py [第50行] 确定下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\确定下载.png 图片
+2025-03-31 09:39:42,138 rj_jxy INFO basepage.py [第23行]  : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\资源已存在.png 图片
+2025-03-31 09:39:42,622 rj_jxy INFO basepage.py [第36行] 页面：E:\Git\rjjxys\Picture\tiy_34q\extend\资源已存在.png 图片存在
+2025-03-31 09:39:42,622 rj_jxy INFO basepage.py [第23行] 点击批量确定下载 : 查找：E:\Git\rjjxys\Picture\tiy_34q\extend\批量确定.png 图片
+2025-03-31 09:39:44,522 rj_jxy INFO basepage.py [第50行] 点击批量确定下载: 点击 E:\Git\rjjxys\Picture\tiy_34q\extend\批量确定.png 图片
+2025-03-31 09:39:46,613 rj_jxy INFO conftest.py [第35行] **********测试结束/关闭客户端**********

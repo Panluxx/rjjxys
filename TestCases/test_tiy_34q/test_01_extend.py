@@ -35,6 +35,14 @@ class TestExtend(BasePage):
         sleep(5)
         # 窗口会失去焦点，无法使用move
         self.click_key('{ESC}')
+        self.touch(get_path('暂停'), img_doc='点击暂停按钮')
+        self.touch(get_path('播放'), img_doc='点击播放按钮')
+        self.touch(get_path('关闭音量'), img_doc='点击关闭音量按钮')
+        self.touch(get_path('倍速'), img_doc='点击倍速按钮')
+        self.touch(get_path('2.0x倍速'), img_doc='点击2.0x按钮')
+        self.touch(get_path('恢复音量'), img_doc='点击恢复音量按钮')
+        self.touch(get_path('全屏'), img_doc='点击全屏按钮')
+        self.click_key('{ESC}')
         self.touch(get_path('关闭资源'), img_doc='点击关闭资源')
         # 移动到资源封面
         name = self.exists(get_path('资源封面'))

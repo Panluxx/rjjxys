@@ -45,7 +45,7 @@ class TestDemoClass(BasePage):
         self.assert_exists(get_path('下载中'))
         self.touch(get_path('恢复音量'), img_doc='点击恢复音量')
         # 检查拖动
-        self.swipe(get_path('拖动进度'), record_pos=(-0.107, 0.219), vector=[0.0005, 0.0037], img_doc='拖动进度条')
+        self.swipe((450,963), (886,963), img_doc='拖动进度')
         self.assert_exists(get_path('拖动后检查'))
         self.touch(get_path('全屏'), img_doc='点击全屏')
         sleep(5)
@@ -58,4 +58,4 @@ class TestDemoClass(BasePage):
         self.touch(get_path('切换资源'), img_doc='点击切换资源')
         sleep(2)
         self.assert_exists(get_path('切换后界面'))
-        self.touch(get_path('退出模块'), '点击退出模块')
+        self.touch(get_path('退出模块'), img_doc='点击退出模块')

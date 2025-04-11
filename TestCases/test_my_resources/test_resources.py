@@ -69,8 +69,8 @@ class TestResources(BasePage):
             sleep(2)
             self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')
             self.touch(get_path('文件关闭'), img_doc='关闭文档')
-            name1 = self.exists(get_path('文档'))
-            move(name1)
+            name = self.exists(get_path('文档'))
+            move(name)
             self.touch(get_path('删除'), img_doc='删除文档')
             sleep(1)
             self.touch(get_path('确定删除'), img_doc='确定删除')
@@ -82,22 +82,20 @@ class TestResources(BasePage):
 
     def test_edit_resources(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
-        name = self.exists(get_path('课件'), img_doc='课件存在')
-        if name:
-            move(name)
-            self.touch(get_path('编辑'), img_doc='编辑课件')
-            self.assert_exists(get_path('课件资源'), img_doc='查看打开的资源')
-            self.touch(get_path('课件关闭'), img_doc='关闭课件')
+        name1 = self.exists(get_path('课件'))
+        move(name1)
+        self.touch(get_path('编辑'), img_doc='编辑课件')
+        self.assert_exists(get_path('课件资源'), img_doc='查看打开的资源')
+        self.touch(get_path('课件关闭'), img_doc='关闭课件')
 
     def test_rename(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
-        name = self.exists(get_path('课件'))
-        if name:
-            move(name)
-            self.touch(get_path('重命名'), img_doc='重命名课件')
-            self.text('编辑课件', img_doc='输入文件名')
-            self.click_key('{ENTER}')
-            self.assert_exists(get_path('编辑课件'), img_doc='查看编辑后的课件名')
+        name2 = self.exists(get_path('课件'))
+        move(name2)
+        self.touch(get_path('重命名'), img_doc='重命名课件')
+        self.text('编辑课件', img_doc='输入文件名')
+        self.click_key('{ENTER}')
+        self.assert_exists(get_path('编辑课件'), img_doc='查看编辑后的课件名')
 
     def test_export_resources(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
@@ -138,12 +136,11 @@ class TestResources(BasePage):
 
     def test_del(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
-        name = self.exists(get_path('课件'), img_doc='课件存在')
-        if name:
-            move(name)
-            self.touch(get_path('删除'), img_doc='删除课件')
-            sleep(1)
-            self.touch(get_path('确定删除'), img_doc='确定删除')
+        name4 = self.exists(get_path('编辑课件'))
+        move(name4)
+        self.touch(get_path('删除'), img_doc='删除课件')
+        sleep(1)
+        self.touch(get_path('确定删除'), img_doc='确定删除')
 
     def test_batch_del(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')

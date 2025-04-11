@@ -63,10 +63,16 @@ class BasePage:
             self.save_page_screenshots(img_doc)
             raise e
 
-    def swipe(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080), vector=None):
+    # def swipe(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080), vector=None):
+    #     try:
+    #         swipe(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
+    #                             img_doc=img_doc), vector=vector)
+    #     except Exception as e:
+    #         self.save_page_screenshots(img_doc)
+    #         raise e
+    def swipe(self, v1, v2, img_doc='', vector=None):
         try:
-            swipe(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
-                                img_doc=img_doc), vector=vector)
+            swipe(v1, v2, vector=vector)
         except Exception as e:
             self.save_page_screenshots(img_doc)
             raise e

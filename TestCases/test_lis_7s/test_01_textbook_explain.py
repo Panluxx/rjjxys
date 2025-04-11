@@ -30,7 +30,7 @@ class TestTextbookExplain(BasePage):
         self.assert_exists(get_path('模块布局'))
         self.touch(get_path('专题讲座'), img_doc='点击专题讲座')
         self.assert_exists(get_path('专题讲座布局'))
-        sleep(2)
+        sleep(5)
         self.touch(get_path('暂停'), img_doc='点击暂停')
         self.assert_exists(get_path('暂停布局'))
         self.touch(get_path('播放'), img_doc='点击播放')
@@ -45,8 +45,7 @@ class TestTextbookExplain(BasePage):
         self.assert_exists(get_path('下载中'))
         self.touch(get_path('恢复音量'), img_doc='点击恢复音量')
         # 检查拖动
-        self.swipe(get_path('拖动进度'), record_pos=(-0.107, 0.219), vector=[0.0005, -0.0037], img_doc='拖动进度条')
-        sleep(1)
+        self.swipe((450,963), (886,963), img_doc='拖动进度')
         self.assert_exists(get_path('拖动后检查'))
         self.touch(get_path('全屏'), img_doc='点击全屏')
         sleep(5)

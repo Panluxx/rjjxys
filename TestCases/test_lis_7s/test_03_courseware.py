@@ -33,6 +33,9 @@ class TestCourseware(BasePage):
         sleep(1)
         self.assert_exists(get_path('资源内容'), img_doc='检查资源是否正常打开')
         sleep(1)
+        # 焦点不在课件上，只能先用鼠标点，键盘才能操作
+        self.double_click(get_path('资源内容'), img_doc='翻下一页')
+        sleep(1)
         self.touch(get_path('退出浏览'), img_doc='点击退出浏览')
         sleep(1)
         name = self.exists(get_path('资源封面'))
