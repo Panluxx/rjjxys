@@ -6,21 +6,22 @@
 # Software  : PyCharm
 
 from airtest.core.api import *
-from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
 from pywinauto.mouse import move
 
 
+# 模块图片目录
+MODULE_DIR = 'lis_7s/courseware'
+
+
 def get_path(image):
-    courseware_path = os.path.join(p_path.picture_path, r'lis_7s\courseware')
-    return os.path.join(courseware_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
 
 
-pytest.mark.usefixtures('login')
-
-
+@pytest.mark.usefixtures('login')
 class TestCourseware(BasePage):
     @pytest.mark.courseware
     def test_case_01(self, login):
@@ -44,6 +45,7 @@ class TestCourseware(BasePage):
         sleep(1)
         self.assert_exists(get_path('资源内容'), img_doc='检查资源内容')
         sleep(1)
+        self.double_click(get_path('资源内容'), img_doc='翻下一页')
         self.touch(get_path('退出浏览'), img_doc='点击退出浏览')
         sleep(1)
         move(name)

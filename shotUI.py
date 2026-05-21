@@ -27,8 +27,8 @@ def jietu(name, png):
     img_ready.save(png)
 
 
-img_path = os.path.join(p_path.picture_path, 'login')
-
-img_name = img_path + r"\人教教学易.png"
-print(img_name)
-jietu('人教教学易', img_name)
+if __name__ == '__main__':
+    img_path = os.path.join(p_path.picture_path, 'login')
+    img_name = img_path + r"\人教教学易.png"
+    print(img_name)
+    jietu('人教教学易', img_name)

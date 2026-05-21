@@ -7,21 +7,23 @@
 
 
 from airtest.core.api import *
-from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
 from pywinauto.mouse import move
 
 
+# 模块图片目录
+MODULE_DIR = 'lis_7s/democlass'
+
+
 def get_path(image):
-    module_path = os.path.join(p_path.picture_path, r'lis_7s\democlass')
-    return os.path.join(module_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
 
 
-pytest.mark.usefixtures('login')
 
-
+@pytest.mark.usefixtures('login')
 class TestDemoClass(BasePage):
     def test_case_01(self, login):
         self.touch(get_path('学科筛选框'), img_doc='点击学科筛选框')
@@ -44,8 +46,16 @@ class TestDemoClass(BasePage):
         self.touch(get_path('下载'), img_doc='点击下载')
         self.assert_exists(get_path('下载中'))
         self.touch(get_path('恢复音量'), img_doc='点击恢复音量')
-        # 检查拖动
-        self.swipe((450,963), (886,963), img_doc='拖动进度')
+        # 检查拖动 - 先定位滑块位置，再相对拖动
+        slider_pos = self.exists(get_path('进度滑块'), img_doc='进度滑块', threshold=0.85)
+        if slider_pos:
+            # 从滑块当前位置向右拖动 200 像素
+            self.swipe(slider_pos, (slider_pos[0] + 200, slider_pos[1]), img_doc='拖动进度')
+        else:
+            # 如果找不到滑块，使用相对坐标（在视频播放器区域内）
+            # 假设进度条在 y=950 附近
+            self.swipe((450, 950), (650, 950), img_doc='拖动进度')
+        sleep(2)
         self.assert_exists(get_path('拖动后检查'))
         self.touch(get_path('全屏'), img_doc='点击全屏')
         sleep(5)

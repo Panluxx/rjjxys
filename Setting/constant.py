@@ -5,6 +5,7 @@
 # File      : constant.py
 # Software  : PyCharm
 import winreg
+import os
 
 
 # 通过注册表查询安装文件路径
@@ -23,9 +24,9 @@ def client_dir():
 # 文件存放路径
 resources_save_dir = r'C:\Users\Administrator\Downloads'
 
-# 账号/密码
-username = '18269604642'
-password = 'Test@321'
+# 账号/密码（从环境变量读取，未设置时使用默认值）
+username = os.getenv('RJJXYS_USERNAME', '18269604642')
+password = os.getenv('RJJXYS_PASSWORD', 'Test@321')
 
 # 资源
 resource_name = [{"name": "文档.docx"}, {"name": "课件.pptx"}, {"name": "音频.mp3"}, {"name": "视频.mp4"},

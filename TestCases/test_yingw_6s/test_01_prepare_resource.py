@@ -7,15 +7,18 @@
 
 
 from airtest.core.api import *
-from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
+
+
+# 模块图片目录
+MODULE_DIR = 'yingw_6s/prepare_resource'
 
 
 def get_path(image):
-    classroom_path = os.path.join(p_path.picture_path, r'yingw_6s\prepare_resource')
-    return os.path.join(classroom_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
 
 
 pytest.mark.usefixtures('login')

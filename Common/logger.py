@@ -6,9 +6,9 @@
 # Software  : PyCharm
 
 import os
+import time
 import logging
 from Common.config import p_path
-from datetime import datetime
 
 
 class LoggerHandler(logging.Logger):
@@ -17,6 +17,7 @@ class LoggerHandler(logging.Logger):
                  level=0,
                  file_name=None,
                  handler_level=0,
+                 encoding='utf-8',
                  fmt="%(asctime)s %(name)s %(levelname)s %(filename)s [第%(lineno)d行] %(message)s",
                  **kw
                  ):
@@ -27,7 +28,7 @@ class LoggerHandler(logging.Logger):
         if not file_name:
             handler = logging.StreamHandler()
         else:
-            handler = logging.FileHandler(file_name)
+            handler = logging.FileHandler(file_name, encoding=encoding, mode='w')
 
         # 设置 handler 的级别
         handler.setLevel(handler_level)
@@ -38,10 +39,7 @@ class LoggerHandler(logging.Logger):
         handler.setFormatter(handler_format)
 
 
-# 获取当前时间
-now_time = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
-# 拼接log文件名称
-file_name = '{}.log'.format(now_time)
-# 传入log日志跟名称，不想生成那么就把file_name写死
+# 固定日志文件名（每次运行覆盖）
+file_name = 'latest.log'
 logger_path = os.path.join(p_path.log_path, file_name)
 logger = LoggerHandler(name="rj_jxy", file_name=logger_path, encoding="utf-8")

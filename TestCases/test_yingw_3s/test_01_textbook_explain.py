@@ -7,19 +7,22 @@
 
 
 from airtest.core.api import *
-from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
 from pywinauto.mouse import move
 
 
+# 模块图片目录
+MODULE_DIR = 'yingw_3s/textbook_explain'
+
+
 def get_path(image):
-    module_path = os.path.join(p_path.picture_path, r'yingw_3s\textbook_explain')
-    return os.path.join(module_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
 
 
-pytest.mark.usefixtures('login')
+@pytest.mark.usefixtures('login')
 
 
 class TestTextbookExplain(BasePage):

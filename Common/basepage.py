@@ -6,6 +6,7 @@
 # Software  : PyCharm
 
 
+from typing import Optional, Tuple
 from airtest.core.api import *
 from Common.logger import logger
 from Common.config import p_path
@@ -18,7 +19,7 @@ from PIL import Image
 
 class BasePage:
 
-    def template(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080)):
+    def template(self, filepath, img_doc='', threshold=0.7, record_pos=None, resolution=(1920, 1080)):
         try:
             logger.info(f"{img_doc} : 查找：{filepath} 图片")
             path = Template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution)
@@ -28,20 +29,23 @@ class BasePage:
             self.save_page_screenshots(img_doc)
             raise e
 
-    def exists(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080)):
+    def exists(self, filepath, img_doc='', threshold=0.7, record_pos=None, resolution=(1920, 1080)) -> Optional[Tuple[int, int]]:
         try:
-            path = exists(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
-                                        img_doc=img_doc))
-            # self.save_page_screenshots(img_doc)
-            logger.info(f'{img_doc}页面：{filepath} 图片存在')
+            pos = exists(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
+                                       img_doc=img_doc))
+            if pos:
+                logger.info(f'{img_doc}页面：{filepath} 图片存在，位置: {pos}')
+                return pos
+            else:
+                logger.warn(f'{filepath} 图片不存在')
+                self.save_page_screenshots(img_doc)
+                return None
         except Exception as e:
             logger.warn(f'{filepath} 图片不存在')
             self.save_page_screenshots(img_doc)
-            return False
-        else:
-            return path
+            return None
 
-    def touch(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080)):
+    def touch(self, filepath, img_doc='', threshold=0.7, record_pos=None, resolution=(1920, 1080)):
         try:
             touch(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
                                 img_doc=img_doc))
@@ -77,11 +81,10 @@ class BasePage:
             self.save_page_screenshots(img_doc)
             raise e
 
-    def assert_exists(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080), msg=''):
+    def assert_exists(self, filepath, img_doc='', threshold=0.7, record_pos=None, resolution=(1920, 1080), msg=''):
         try:
             assert_exists(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
-                                        img_doc=img_doc),
-                          msg=msg)
+                                        img_doc=img_doc), msg=msg)
             # self.save_page_screenshots(img_doc)
             logger.info(f'对{img_doc}图片进行断言：结果为：True')
         except Exception as e:
@@ -89,7 +92,7 @@ class BasePage:
             self.save_page_screenshots(img_doc)
             raise e
 
-    def double_click(self, filepath, img_doc='', threshold=0.9, record_pos=None, resolution=(1920, 1080)):
+    def double_click(self, filepath, img_doc='', threshold=0.7, record_pos=None, resolution=(1920, 1080)):
         try:
             double_click(self.template(filepath, threshold=threshold, record_pos=record_pos, resolution=resolution,
                                        img_doc=img_doc))

@@ -7,16 +7,19 @@
 
 
 from airtest.core.api import *
-from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
 from pywinauto.mouse import move
 
 
+# 模块图片目录
+MODULE_DIR = 'wul_8s/experiment'
+
+
 def get_path(image):
-    courseware_path = os.path.join(p_path.picture_path, r'wul_8s\experiment')
-    return os.path.join(courseware_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
 
 
 pytest.mark.usefixtures('login')
@@ -37,16 +40,17 @@ class TestExperiment(BasePage):
         sleep(1)
         self.assert_exists(get_path('资源内容'), img_doc='检查资源是否正常打开')
         sleep(5)
-        # 移动到工具栏位置
-        move(coords=(1890, 990))
+        # 窗口会失去焦点，无法使用move
+        self.click_key('{ESC}')
         self.touch(get_path('关闭'), img_doc='点击关闭')
         # 移动到资源封面
         name = self.exists(get_path('资源封面'))
-        move(name)
+        if name:
+            move(name)
         self.touch(get_path('下载'), img_doc='点击下载')
         self.touch(get_path('确定下载'), img_doc='确定下载')
         if self.exists(get_path('覆盖弹框')):
-            self.touch(get_path('取消下载'), img_doc='点击取消下载')
+            self.touch(get_path('确定下载'), img_doc='点击确定下载')
         sleep(1)
         # 批量单个下载
         self.touch(get_path('批量下载'), img_doc='点击批量下载')

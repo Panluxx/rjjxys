@@ -8,77 +8,138 @@
 
 from airtest.core.api import *
 from Common.config import p_path
-import os
 import pytest
 from Common.basepage import BasePage
+from Common.utils import get_image_path
 from time import sleep
 from Setting.constant import resource_name, resources_save_dir
 from pywinauto.mouse import move
 from pywinauto.keyboard import SendKeys
 
 
+# 模块图片目录
+MODULE_DIR = 'my_resources/resources'
+
+
 def get_path(image):
-    resources_path = os.path.join(p_path.picture_path, r'my_resources\resources')
-    return os.path.join(resources_path, f'{image}.png')
+    """获取当前模块的图片路径"""
+    return get_image_path(MODULE_DIR, image)
+
+
+# 资源类型配置：定义不同资源类型的操作
+RESOURCE_CONFIG = {
+    '音频.mp3': {
+        'open_btn': '音频',
+        'content': '音频资源',
+        'close_btn': '关闭音频',
+    },
+    '视频.mp4': {
+        'open_btn': '视频',
+        'content': '视频资源',
+        'close_btn': '关闭音频',  # 注：原代码使用关闭音频关闭视频
+        'esc_key': True,
+    },
+    '图片.jpg': {
+        'open_btn': '图片',
+        'content': '图片资源',
+        'close_btn': '关闭音频',
+    },
+    '动画.swf': {
+        'open_btn': '动画',
+        'content': '动画资源',
+        'close_btn': '关闭动画',
+    },
+    '文件.xlsx': {
+        'open_btn': '文件',
+        'content': '文件资源',
+        'close_btn': '文件关闭',
+        'has_save_popup': True,
+    },
+    '文档.docx': {
+        'open_btn': '文档',
+        'content': '文档资源',
+        'close_btn': '文件关闭',
+        'has_delete': True,
+        'delete_target': '文档',
+    },
+    '课件.pptx': {
+        'open_btn': '课件',
+        'content': '课件资源',
+        'close_btn': '课件关闭',
+        'open_wait': 10,
+    },
+}
+
+
+def get_resource_config(name):
+    """获取资源类型配置"""
+    return RESOURCE_CONFIG.get(name, {
+        'open_btn': name.split('.')[0],
+        'content': f'{name.split(".")[0]}资源',
+        'close_btn': '关闭',
+    })
 
 
 @pytest.mark.usefixtures('login')
 class TestResources(BasePage):
     @pytest.mark.parametrize("test_data", resource_name)
     def test_import_resources(self, login, test_data):
+        resource_name_val = test_data['name']
+        config = get_resource_config(resource_name_val)
+
+        # 切换到我的资源页面
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
+        sleep(3)
+
+        # 点击导入
         self.touch(get_path('导入'), img_doc='点击导入按钮')
+
+        # 检查路径是否已存在
         if self.exists(get_path('路径存在')):
             pass
         else:
             self.touch(get_path('下拉框'), img_doc='点击下拉框')
-            # 文件路径
             self.text(p_path.resources_path, img_doc=f'输入文件路径')
             self.click_key('{ENTER}')
         sleep(1)
+
+        # 输入文件名
         self.touch(get_path('输入文件名'), img_doc='点击输入文件名')
-        self.text(test_data['name'], img_doc=f'输入文件名{test_data["name"]}')
+        self.text(resource_name_val, img_doc=f'输入文件名{resource_name_val}')
         self.click_key('{ENTER}')
         sleep(3)
-        if test_data['name'] == '音频.mp3':
-            self.touch(get_path('音频'), img_doc='打开资源')
-            self.assert_exists(get_path('音频资源'), img_doc='查看打开的资源')
-            self.touch(get_path('关闭音频'), img_doc='点击关闭音频')
-        elif test_data['name'] == '视频.mp4':
-            self.touch(get_path('视频'), img_doc='打开视频')
-            self.assert_exists(get_path('视频资源'), img_doc='查看打开的资源')
-            self.click_key('{ESC}')
-            self.touch(get_path('关闭音频'), img_doc='关闭视频')
-        elif test_data['name'] == '图片.jpg':
-            self.touch(get_path('图片'),  img_doc='打开图片')
-            self.assert_exists(get_path('图片资源'), img_doc='查看打开的资源')
-            self.touch(get_path('关闭音频'), img_doc='关闭图片')
-        elif test_data['name'] == '动画.swf':
-            self.touch(get_path('动画'), img_doc='打开动画')
-            self.assert_exists(get_path('动画资源'), img_doc='查看打开的资源')
-            self.touch(get_path('关闭动画'), img_doc='关闭动画')
-        elif test_data['name'] == '文件.xlsx':
-            self.touch(get_path('文件'),  img_doc='打开文件')
-            self.assert_exists(get_path('文件资源'), img_doc='查看打开的资源')
-            sleep(2)
-            self.touch(get_path('文件关闭'), img_doc='关闭文件')
-            if self.exists(get_path('保存弹窗')):
-                self.touch(get_path('不保存'), img_doc='不保存文件')
-        elif test_data['name'] == '文档.docx':
-            self.touch(get_path('文档'), img_doc='打开文档')
-            sleep(2)
-            self.assert_exists(get_path('文档资源'), img_doc='查看打开的资源')
-            self.touch(get_path('文件关闭'), img_doc='关闭文档')
-            name = self.exists(get_path('文档'))
-            move(name)
-            self.touch(get_path('删除'), img_doc='删除文档')
-            sleep(1)
-            self.touch(get_path('确定删除'), img_doc='确定删除')
+
+        # 根据配置打开资源
+        self.touch(get_path(config['open_btn']), img_doc=f'打开{resource_name_val}')
+        
+        # 特殊等待时间（如课件需要等待10秒）
+        if config.get('open_wait'):
+            sleep(config['open_wait'])
         else:
-            self.touch(get_path('课件'), img_doc='打开课件')
-            sleep(10)
-            self.assert_exists(get_path('课件资源'), img_doc='查看打开的资源')
-            self.touch(get_path('课件关闭'), img_doc='关闭课件')
+            sleep(2)
+            
+        self.assert_exists(get_path(config['content']), img_doc='查看打开的资源')
+
+        # ESC 键处理（如视频）
+        if config.get('esc_key'):
+            self.click_key('{ESC}')
+
+        # 关闭资源
+        self.touch(get_path(config['close_btn']), img_doc='关闭资源')
+
+        # 保存弹窗处理（如文件）
+        if config.get('has_save_popup') and self.exists(get_path('保存弹窗')):
+            self.touch(get_path('不保存'), img_doc='不保存文件')
+
+        # 删除处理（如文档）
+        if config.get('has_delete'):
+            target = config.get('delete_target', resource_name_val.split('.')[0])
+            name = self.exists(get_path(target))
+            if name:
+                move(name)
+                self.touch(get_path('删除'), img_doc='删除文档')
+                sleep(1)
+                self.touch(get_path('确定删除'), img_doc='确定删除')
 
     def test_edit_resources(self, login):
         self.touch(get_path('我的资源'), img_doc='切换到我的资源页面')
